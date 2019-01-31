@@ -1,0 +1,832 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<exchange xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" units="m" filename="" filepath="">
+  <batchtest name="Report" internal_name="Report" units="m">
+    <clashtests>
+      <clashtest name="Piping" test_type="hard" status="ok" tolerance="0.001" merge_composites="0">
+        <linkage mode="none" />
+        <rules>
+          <rule name="Items in same group/block/cell" enabled="1" creator="lcop_clash_adapator_for_lcodpclash_ignore_same_group">
+            <ruleparams />
+          </rule>
+          <rule name="Piping - Clearance Areas" enabled="1" creator="LcOdpClashIgnoreSpecSelectionSetsPlugin">
+            <ruleparams>
+              <ruleparam specific_data="0">
+                <value>
+                  <data type="name">
+                    <name internal="Piping">Piping</name>
+                  </data>
+                </value>
+              </ruleparam>
+              <ruleparam specific_data="0">
+                <value>
+                  <data type="name">
+                    <name internal="Exclusions&#xD;&#xA;ClearanceAreas">Exclusions-&gt;ClearanceAreas</name>
+                  </data>
+                </value>
+              </ruleparam>
+            </ruleparams>
+          </rule>
+          <rule name="Equip - Clearance Areas" enabled="1" creator="LcOdpClashIgnoreSpecSelectionSetsPlugin">
+            <ruleparams>
+              <ruleparam specific_data="0">
+                <value>
+                  <data type="name">
+                    <name internal="Equip">Equip</name>
+                  </data>
+                </value>
+              </ruleparam>
+              <ruleparam specific_data="0">
+                <value>
+                  <data type="name">
+                    <name internal="Exclusions&#xD;&#xA;ClearanceAreas">Exclusions-&gt;ClearanceAreas</name>
+                  </data>
+                </value>
+              </ruleparam>
+            </ruleparams>
+          </rule>
+          <rule name="Piping - Layer 0" enabled="1" creator="LcOdpClashIgnoreSpecSelectionSetsPlugin">
+            <ruleparams>
+              <ruleparam specific_data="0">
+                <value>
+                  <data type="name">
+                    <name internal="Piping">Piping</name>
+                  </data>
+                </value>
+              </ruleparam>
+              <ruleparam specific_data="0">
+                <value>
+                  <data type="name">
+                    <name internal="Exclusions&#xD;&#xA;Layer 0">Exclusions-&gt;Layer 0</name>
+                  </data>
+                </value>
+              </ruleparam>
+            </ruleparams>
+          </rule>
+          <rule name="Equip - Layer 0" enabled="1" creator="LcOdpClashIgnoreSpecSelectionSetsPlugin">
+            <ruleparams>
+              <ruleparam specific_data="0">
+                <value>
+                  <data type="name">
+                    <name internal="Equip">Equip</name>
+                  </data>
+                </value>
+              </ruleparam>
+              <ruleparam specific_data="0">
+                <value>
+                  <data type="name">
+                    <name internal="Exclusions&#xD;&#xA;Layer 0">Exclusions-&gt;Layer 0</name>
+                  </data>
+                </value>
+              </ruleparam>
+            </ruleparams>
+          </rule>
+          <rule name="EquipmentComponents" enabled="1" creator="LcOdpClashIgnoreSameSelectionSetPlugin">
+            <ruleparams>
+              <ruleparam specific_data="0">
+                <value>
+                  <data type="name">
+                    <name internal="Exclusions&#xD;&#xA;EquipComponents">Exclusions-&gt;EquipComponents</name>
+                  </data>
+                </value>
+              </ruleparam>
+            </ruleparams>
+          </rule>
+        </rules>
+        <summary total="11" new="8" active="3" reviewed="0" approved="0" resolved="0">
+          <testtype>Hard</testtype>
+          <teststatus>OK</teststatus>
+        </summary>
+        <clashresults>
+          <clashresult name="Clash4" guid="0091a62c-fb5e-4aa7-82eb-0c5814d58bdc" href="Piping_files\cd000001.jpg" status="reviewed" distance="-0.004">
+            <description>Hard</description>
+            <resultstatus>Reviewed</resultstatus>
+            <clashpoint>
+              <pos3f x="25.960" y="19.206" z="4.018" />
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="45" second="52" />
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>19ED</value>
+                </objectattribute>
+                <layer>Iso Information</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PIP-01-1000-01-01.dwg</node>
+                  <node>Iso Information</node>
+                  <node>ACPPDB3DISOSPHERESYMBOL</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Iso Information</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPDB3DISOSPHERESYMBOL</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>1409</value>
+                </objectattribute>
+                <layer>5001</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PIP-01-1000-01-01.dwg</node>
+                  <node>5001</node>
+                  <node>ACPPPIPEINLINEASSET</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>5001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPPIPEINLINEASSET</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+            <comments>
+              <comment id="1" status="new">
+                <body>Replace Flanges</body>
+                <user>mklassen</user>
+                <createddate>
+                  <date year="2016" month="5" day="9" hour="15" minute="0" second="26" />
+                </createddate>
+              </comment>
+            </comments>
+          </clashresult>
+          <clashresult name="Clash5" guid="dfaa3ba4-3d4c-4767-b0e6-f32f1f39951d" href="Piping_files\cd000002.jpg" status="new" distance="-0.002">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="25.939" y="18.022" z="4.080" />
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="45" second="52" />
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>1504</value>
+                </objectattribute>
+                <layer>5001</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PIP-01-1000-01-01.dwg</node>
+                  <node>5001</node>
+                  <node>ACPPPIPE</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>5001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPPIPE</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>1631</value>
+                </objectattribute>
+                <layer>5001_Supports</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PIP-01-1000-01-01.dwg</node>
+                  <node>5001_Supports</node>
+                  <node>ACPPSUPPORT</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>5001_Supports</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSUPPORT</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+            <comments />
+          </clashresult>
+          <clashresult name="Clash6" guid="0542918a-1954-4d14-87ba-ac71cc39ae2f" href="Piping_files\cd000003.jpg" status="reviewed" distance="-0.002">
+            <description>Hard</description>
+            <resultstatus>Reviewed</resultstatus>
+            <clashpoint>
+              <pos3f x="25.986" y="20.478" z="4.080" />
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="45" second="52" />
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>162C</value>
+                </objectattribute>
+                <layer>5001_Supports</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PIP-01-1000-01-01.dwg</node>
+                  <node>5001_Supports</node>
+                  <node>ACPPSUPPORT</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>5001_Supports</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSUPPORT</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>13E5</value>
+                </objectattribute>
+                <layer>5001</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PIP-01-1000-01-01.dwg</node>
+                  <node>5001</node>
+                  <node>ACPPPIPE</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>5001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPPIPE</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+            <comments>
+              <comment id="10000.1634495341" status="reviewed">
+                <body>Ignore Pipe and Support Clashes</body>
+                <user>mklassen</user>
+                <createddate>
+                  <date year="2016" month="7" day="5" hour="6" minute="53" second="6" />
+                </createddate>
+              </comment>
+            </comments>
+          </clashresult>
+          <clashresult name="Clash7" guid="423f49b2-cce3-42c3-9a54-712a9dfc9733" href="Piping_files\cd000004.jpg" status="reviewed" distance="-0.002">
+            <description>Hard</description>
+            <resultstatus>Reviewed</resultstatus>
+            <clashpoint>
+              <pos3f x="25.986" y="22.978" z="4.080" />
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="45" second="52" />
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>15DC</value>
+                </objectattribute>
+                <layer>5001_Supports</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PIP-01-1000-01-01.dwg</node>
+                  <node>5001_Supports</node>
+                  <node>ACPPSUPPORT</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>5001_Supports</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSUPPORT</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>13E5</value>
+                </objectattribute>
+                <layer>5001</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PIP-01-1000-01-01.dwg</node>
+                  <node>5001</node>
+                  <node>ACPPPIPE</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>5001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPPIPE</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+            <comments>
+              <comment id="10000.1634495341" status="reviewed">
+                <body>Pipe clashes with support</body>
+                <user>mklassen</user>
+                <createddate>
+                  <date year="2016" month="7" day="5" hour="6" minute="26" second="30" />
+                </createddate>
+              </comment>
+            </comments>
+          </clashresult>
+          <clashresult name="Clash8" guid="50205260-1c52-43ca-8803-fcc7c897a14d" href="Piping_files\cd000005.jpg" status="reviewed" distance="-0.001">
+            <description>Hard</description>
+            <resultstatus>Reviewed</resultstatus>
+            <clashpoint>
+              <pos3f x="24.318" y="20.493" z="3.141" />
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="45" second="52" />
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>1009</value>
+                </objectattribute>
+                <layer>1000_Supports</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PIP-01-1000-01-01.dwg</node>
+                  <node>1000_Supports</node>
+                  <node>ACPPSUPPORT</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>1000_Supports</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSUPPORT</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>26E4</value>
+                </objectattribute>
+                <layer>1000</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PIP-01-1000-01-01.dwg</node>
+                  <node>1000</node>
+                  <node>ACPPPIPE</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>1000</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPPIPE</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+            <comments>
+              <comment id="10000.1634495341" status="reviewed">
+                <body>Ignore Piping and Support Clashes</body>
+                <user>mklassen</user>
+                <createddate>
+                  <date year="2016" month="7" day="5" hour="5" minute="54" second="55" />
+                </createddate>
+              </comment>
+            </comments>
+          </clashresult>
+          <clashresult name="Clash9" guid="3aaf1547-65fb-41ba-8213-b9f5e3700bd9" href="Piping_files\cd000006.jpg" status="approved" distance="-0.001">
+            <description>Hard</description>
+            <resultstatus>Approved</resultstatus>
+            <clashpoint>
+              <pos3f x="26.261" y="20.560" z="4.301" />
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="45" second="52" />
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>16BA</value>
+                </objectattribute>
+                <layer>1002_Supports</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PIP-01-1000-01-01.dwg</node>
+                  <node>1002_Supports</node>
+                  <node>ACPPSUPPORT</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>1002_Supports</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSUPPORT</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>E24</value>
+                </objectattribute>
+                <layer>1002</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PIP-01-1000-01-01.dwg</node>
+                  <node>1002</node>
+                  <node>ACPPPIPE</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>1002</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPPIPE</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+            <comments>
+              <comment id="1" status="approved">
+                <body>Support Clashes Approved</body>
+                <user>mklassen</user>
+                <createddate>
+                  <date year="2016" month="5" day="17" hour="14" minute="32" second="47" />
+                </createddate>
+              </comment>
+            </comments>
+          </clashresult>
+          <clashresult name="Clash10" guid="0d5955c3-69a8-432f-8c11-9ef3ccb58367" href="Piping_files\cd000007.jpg" status="reviewed" distance="-0.001">
+            <description>Hard</description>
+            <resultstatus>Reviewed</resultstatus>
+            <clashpoint>
+              <pos3f x="26.261" y="18.060" z="4.301" />
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="45" second="52" />
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>16BF</value>
+                </objectattribute>
+                <layer>1002_Supports</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PIP-01-1000-01-01.dwg</node>
+                  <node>1002_Supports</node>
+                  <node>ACPPSUPPORT</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>1002_Supports</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSUPPORT</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>E24</value>
+                </objectattribute>
+                <layer>1002</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PIP-01-1000-01-01.dwg</node>
+                  <node>1002</node>
+                  <node>ACPPPIPE</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>1002</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPPIPE</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+            <comments>
+              <comment id="1" status="new">
+                <body>Pipe Clashes with Support</body>
+                <user>mklassen</user>
+                <createddate>
+                  <date year="2016" month="5" day="19" hour="5" minute="39" second="36" />
+                </createddate>
+              </comment>
+            </comments>
+          </clashresult>
+          <clashresult name="Clash11" guid="971f2e90-1c57-4fea-84d6-a0bb624e7c0a" href="Piping_files\cd000008.jpg" status="reviewed" distance="-0.001">
+            <description>Hard</description>
+            <resultstatus>Reviewed</resultstatus>
+            <clashpoint>
+              <pos3f x="26.261" y="23.060" z="4.301" />
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="45" second="52" />
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>16A8</value>
+                </objectattribute>
+                <layer>1002_Supports</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PIP-01-1000-01-01.dwg</node>
+                  <node>1002_Supports</node>
+                  <node>ACPPSUPPORT</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>1002_Supports</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSUPPORT</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>E24</value>
+                </objectattribute>
+                <layer>1002</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PIP-01-1000-01-01.dwg</node>
+                  <node>1002</node>
+                  <node>ACPPPIPE</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>1002</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPPIPE</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+            <comments>
+              <comment id="1" status="reviewed">
+                <body>Ignore Clashes between Pipe and Supports</body>
+                <user>mklassen</user>
+                <createddate>
+                  <date year="2016" month="7" day="5" hour="5" minute="12" second="29" />
+                </createddate>
+              </comment>
+            </comments>
+          </clashresult>
+          <clashresult name="Clash1" guid="1db005e6-67b6-49a5-9c55-8b25cf9316da" href="Piping_files\cd000009.jpg" status="active" distance="-0.005">
+            <description>Hard</description>
+            <resultstatus>Active</resultstatus>
+            <clashpoint>
+              <pos3f x="18.849" y="15.234" z="3.243" />
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="44" second="59" />
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>1F26</value>
+                </objectattribute>
+                <layer>Iso Information</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PIP-00-1000-01-01.dwg</node>
+                  <node>Iso Information</node>
+                  <node>ACPPDB3DISOSPHERESYMBOL</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Iso Information</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPDB3DISOSPHERESYMBOL</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>E71</value>
+                </objectattribute>
+                <layer>1000</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PIP-00-1000-01-01.dwg</node>
+                  <node>1000</node>
+                  <node>ACPPPIPEINLINEASSET</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>1000</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPPIPEINLINEASSET</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+            <comments />
+          </clashresult>
+          <clashresult name="Clash2" guid="58cd4fd7-cafd-47e9-b1d0-2f983b86e73e" href="Piping_files\cd000010.jpg" status="active" distance="-0.004">
+            <description>Hard</description>
+            <resultstatus>Active</resultstatus>
+            <clashpoint>
+              <pos3f x="18.787" y="15.209" z="3.237" />
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="44" second="59" />
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>1E9B</value>
+                </objectattribute>
+                <layer>Iso Information</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PIP-00-1000-01-01.dwg</node>
+                  <node>Iso Information</node>
+                  <node>ACPPDB3DISOSPHERESYMBOL</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Iso Information</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPDB3DISOSPHERESYMBOL</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>E71</value>
+                </objectattribute>
+                <layer>1000</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PIP-00-1000-01-01.dwg</node>
+                  <node>1000</node>
+                  <node>ACPPPIPEINLINEASSET</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>1000</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPPIPEINLINEASSET</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+            <comments />
+          </clashresult>
+          <clashresult name="Clash3" guid="3848d95f-846a-433b-9239-fd4e92f0d7b6" href="Piping_files\cd000011.jpg" status="active" distance="-0.003">
+            <description>Hard</description>
+            <resultstatus>Active</resultstatus>
+            <clashpoint>
+              <pos3f x="18.747" y="15.218" z="3.259" />
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="44" second="59" />
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>1E9B</value>
+                </objectattribute>
+                <layer>Iso Information</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PIP-00-1000-01-01.dwg</node>
+                  <node>Iso Information</node>
+                  <node>ACPPDB3DISOSPHERESYMBOL</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Iso Information</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPDB3DISOSPHERESYMBOL</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>101E</value>
+                </objectattribute>
+                <layer>1000</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PIP-00-1000-01-01.dwg</node>
+                  <node>1000</node>
+                  <node>ACPPPIPEINLINEASSET</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>1000</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPPIPEINLINEASSET</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+            <comments />
+          </clashresult>
+        </clashresults>
+      </clashtest>
+    </clashtests>
+    <selectionsets />
+  </batchtest>
+</exchange>

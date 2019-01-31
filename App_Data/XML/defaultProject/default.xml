@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<exchange xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" units="m" filename="" filepath="">
+  <batchtest name="Report" internal_name="Report" units="m">
+    <clashtests>
+      <clashtest name="Piping" test_type="hard" status="ok" tolerance="0.001" merge_composites="0">
+        <linkage mode="none" />
+        <rules>
+          <rule name="Items in same group/block/cell" enabled="1" creator="lcop_clash_adapator_for_lcodpclash_ignore_same_group">
+            <ruleparams />
+          </rule>
+          <rule name="Piping - Clearance Areas" enabled="1" creator="LcOdpClashIgnoreSpecSelectionSetsPlugin">
+            <ruleparams>
+              <ruleparam specific_data="0">
+                <value>
+                  <data type="name">
+                    <name internal="Piping">Piping</name>
+                  </data>
+                </value>
+              </ruleparam>
+              <ruleparam specific_data="0">
+                <value>
+                  <data type="name">
+                    <name internal="Exclusions&#xD;&#xA;ClearanceAreas">Exclusions-&gt;ClearanceAreas</name>
+                  </data>
+                </value>
+              </ruleparam>
+            </ruleparams>
+          </rule>
+          <rule name="Equip - Clearance Areas" enabled="1" creator="LcOdpClashIgnoreSpecSelectionSetsPlugin">
+            <ruleparams>
+              <ruleparam specific_data="0">
+                <value>
+                  <data type="name">
+                    <name internal="Equip">Equip</name>
+                  </data>
+                </value>
+              </ruleparam>
+              <ruleparam specific_data="0">
+                <value>
+                  <data type="name">
+                    <name internal="Exclusions&#xD;&#xA;ClearanceAreas">Exclusions-&gt;ClearanceAreas</name>
+                  </data>
+                </value>
+              </ruleparam>
+            </ruleparams>
+          </rule>
+          <rule name="Piping - Layer 0" enabled="1" creator="LcOdpClashIgnoreSpecSelectionSetsPlugin">
+            <ruleparams>
+              <ruleparam specific_data="0">
+                <value>
+                  <data type="name">
+                    <name internal="Piping">Piping</name>
+                  </data>
+                </value>
+              </ruleparam>
+              <ruleparam specific_data="0">
+                <value>
+                  <data type="name">
+                    <name internal="Exclusions&#xD;&#xA;Layer 0">Exclusions-&gt;Layer 0</name>
+                  </data>
+                </value>
+              </ruleparam>
+            </ruleparams>
+          </rule>
+          <rule name="Equip - Layer 0" enabled="1" creator="LcOdpClashIgnoreSpecSelectionSetsPlugin">
+            <ruleparams>
+              <ruleparam specific_data="0">
+                <value>
+                  <data type="name">
+                    <name internal="Equip">Equip</name>
+                  </data>
+                </value>
+              </ruleparam>
+              <ruleparam specific_data="0">
+                <value>
+                  <data type="name">
+                    <name internal="Exclusions&#xD;&#xA;Layer 0">Exclusions-&gt;Layer 0</name>
+                  </data>
+                </value>
+              </ruleparam>
+            </ruleparams>
+          </rule>
+          <rule name="EquipmentComponents" enabled="1" creator="LcOdpClashIgnoreSameSelectionSetPlugin">
+            <ruleparams>
+              <ruleparam specific_data="0">
+                <value>
+                  <data type="name">
+                    <name internal="Exclusions&#xD;&#xA;EquipComponents">Exclusions-&gt;EquipComponents</name>
+                  </data>
+                </value>
+              </ruleparam>
+            </ruleparams>
+          </rule>
+        </rules>
+        <summary total="11" new="8" active="3" reviewed="0" approved="0" resolved="0">
+          <testtype>Hard</testtype>
+          <teststatus>OK</teststatus>
+        </summary>
+        <clashresults>        
+          <clashresult name="Clash123" guid="3848d95f-846a-433b-9239-fd4e92f0d7b6" href="Piping_files\cd000011.jpg" status="active" distance="-0.003">
+            <description>Hard</description>
+            <resultstatus>Active</resultstatus>
+            <clashpoint>
+              <pos3f x="18.747" y="15.218" z="3.259" />
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="44" second="59" />
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>1E9B</value>
+                </objectattribute>
+                <layer>Iso Information</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PIP-00-1000-01-01.dwg</node>
+                  <node>Iso Information</node>
+                  <node>ACPPDB3DISOSPHERESYMBOL</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Iso Information</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPDB3DISOSPHERESYMBOL</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>101E</value>
+                </objectattribute>
+                <layer>1000</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PIP-00-1000-01-01.dwg</node>
+                  <node>1000</node>
+                  <node>ACPPPIPEINLINEASSET</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>1000</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPPIPEINLINEASSET</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+            <comments />
+          </clashresult>
+        </clashresults>
+      </clashtest>
+    </clashtests>
+    <selectionsets />
+  </batchtest>
+</exchange>

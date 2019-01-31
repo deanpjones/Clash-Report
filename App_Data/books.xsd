@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="exchange">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="batchtest">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="clashtests">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="clashtest">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="linkage">
+                            <xs:complexType>
+                              <xs:attribute name="mode" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="rules">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element maxOccurs="unbounded" name="rule">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="ruleparams">
+                                        <xs:complexType>
+                                          <xs:sequence minOccurs="0">
+                                            <xs:element maxOccurs="unbounded" name="ruleparam">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="value">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="data">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="name">
+                                                                <xs:complexType>
+                                                                  <xs:simpleContent>
+                                                                    <xs:extension base="xs:string">
+                                                                      <xs:attribute name="internal" type="xs:string" use="required" />
+                                                                    </xs:extension>
+                                                                  </xs:simpleContent>
+                                                                </xs:complexType>
+                                                              </xs:element>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="type" type="xs:string" use="required" />
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="specific_data" type="xs:unsignedByte" use="required" />
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="name" type="xs:string" use="required" />
+                                    <xs:attribute name="enabled" type="xs:unsignedByte" use="required" />
+                                    <xs:attribute name="creator" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="summary">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="testtype" type="xs:string" />
+                                <xs:element name="teststatus" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="total" type="xs:unsignedByte" use="required" />
+                              <xs:attribute name="new" type="xs:unsignedByte" use="required" />
+                              <xs:attribute name="active" type="xs:unsignedByte" use="required" />
+                              <xs:attribute name="reviewed" type="xs:unsignedByte" use="required" />
+                              <xs:attribute name="approved" type="xs:unsignedByte" use="required" />
+                              <xs:attribute name="resolved" type="xs:unsignedByte" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="clashresults">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element maxOccurs="unbounded" name="clashresult">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="description" type="xs:string" />
+                                      <xs:element name="resultstatus" type="xs:string" />
+                                      <xs:element name="clashpoint">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="pos3f">
+                                              <xs:complexType>
+                                                <xs:attribute name="x" type="xs:decimal" use="required" />
+                                                <xs:attribute name="y" type="xs:decimal" use="required" />
+                                                <xs:attribute name="z" type="xs:decimal" use="required" />
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="createddate">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="date">
+                                              <xs:complexType>
+                                                <xs:attribute name="year" type="xs:unsignedShort" use="required" />
+                                                <xs:attribute name="month" type="xs:unsignedByte" use="required" />
+                                                <xs:attribute name="day" type="xs:unsignedByte" use="required" />
+                                                <xs:attribute name="hour" type="xs:unsignedByte" use="required" />
+                                                <xs:attribute name="minute" type="xs:unsignedByte" use="required" />
+                                                <xs:attribute name="second" type="xs:unsignedByte" use="required" />
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="clashobjects">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element maxOccurs="unbounded" name="clashobject">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="objectattribute">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="name" type="xs:string" />
+                                                        <xs:element name="value" type="xs:string" />
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                  <xs:element name="layer" type="xs:string" />
+                                                  <xs:element name="pathlink">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element maxOccurs="unbounded" name="node" type="xs:string" />
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                  <xs:element name="smarttags">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element maxOccurs="unbounded" name="smarttag">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="name" type="xs:string" />
+                                                              <xs:element name="value" type="xs:string" />
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="comments">
+                                        <xs:complexType>
+                                          <xs:sequence minOccurs="0">
+                                            <xs:element name="comment">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="body" type="xs:string" />
+                                                  <xs:element name="user" type="xs:string" />
+                                                  <xs:element name="createddate">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="date">
+                                                          <xs:complexType>
+                                                            <xs:attribute name="year" type="xs:unsignedShort" use="required" />
+                                                            <xs:attribute name="month" type="xs:unsignedByte" use="required" />
+                                                            <xs:attribute name="day" type="xs:unsignedByte" use="required" />
+                                                            <xs:attribute name="hour" type="xs:unsignedByte" use="required" />
+                                                            <xs:attribute name="minute" type="xs:unsignedByte" use="required" />
+                                                            <xs:attribute name="second" type="xs:unsignedByte" use="required" />
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="id" type="xs:decimal" use="required" />
+                                                <xs:attribute name="status" type="xs:string" use="required" />
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="name" type="xs:string" use="required" />
+                                    <xs:attribute name="guid" type="xs:string" use="required" />
+                                    <xs:attribute name="href" type="xs:string" use="required" />
+                                    <xs:attribute name="status" type="xs:string" use="required" />
+                                    <xs:attribute name="distance" type="xs:decimal" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="name" type="xs:string" use="required" />
+                        <xs:attribute name="test_type" type="xs:string" use="required" />
+                        <xs:attribute name="status" type="xs:string" use="required" />
+                        <xs:attribute name="tolerance" type="xs:decimal" use="required" />
+                        <xs:attribute name="merge_composites" type="xs:unsignedByte" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="selectionsets" />
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:string" use="required" />
+            <xs:attribute name="internal_name" type="xs:string" use="required" />
+            <xs:attribute name="units" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="units" type="xs:string" use="required" />
+      <xs:attribute name="filename" type="xs:string" use="required" />
+      <xs:attribute name="filepath" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

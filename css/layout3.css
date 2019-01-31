@@ -1,0 +1,159 @@
+﻿/* DEAN JONES, APR.01, 2018 */
+/* LAYOUT3.CSS */
+
+/*upload button (image)*/
+.btn-image {
+    background-color: rgba(200,200,0,0.2);
+}
+
+img {
+    border: 2px solid rgba(34, 34, 34, .8);
+}
+    img.notfound {
+        /*404ImageNotFound.png*/
+        background-image: url(/images/404ImageNotFound.png);
+        content: "";
+    }
+
+
+/*toggle button (image)*/
+.circle {
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 0;
+    margin: 2px;
+    padding: 6px;
+    /*border: 0;*/
+}
+/*format for upload controls (settings menu)*/
+.uploadFormat {
+    /*background-color: rgba(150, 171, 192, 1);*/
+    border: .02em solid;
+    border-radius: 1em;
+    padding: 0em 2em 2em 1em;
+    /*padding-bottom: 2em;*/
+    width: 30%;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+}
+
+/*project name (settings menu)*/
+.proj{
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 1em;
+}
+.proj:hover {
+    background-color: rgba(150, 171, 192, 1);
+    color: white;
+    font-weight: normal;
+}
+
+/*format for xml table*/
+.myTableFormat {
+    /*background-color: rgba(150, 171, 192, 1);*/
+    display: table-cell;
+    border: .02em solid;
+    border-radius: 1em;
+    padding: 2em;
+    /*padding-bottom: 2em;*/
+    width: 30%;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+}
+
+#footer {
+    /*margin-top: 3em;*/
+    /*position: absolute;*/
+    margin-top: 24px;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Height of the footer */
+    /*background: #6cf;*/
+}
+
+#settings {
+    border-color: black;
+    border-width: .2rem;
+}
+
+#new_project_folder > td {
+    padding: 3px;
+}
+
+/*dropdownlist*/
+select {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-weight: bold;
+    color: rgba(51, 122, 183, 1);
+}
+
+/* file upload */
+#lblUploadXml {
+    cursor: pointer;
+}
+
+/* hide UPLOAD (asp control) (uses label instead) */
+#FileUpload1, #FileUploadImages {
+    opacity: 0; /* hide the input control (uses the label instead) */
+    position: absolute;
+    z-index: -1;
+}
+/* file upload (end) */
+
+#page {
+    /*background-color: #808080;*/
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+/* Pager */
+/*round corners (start of pager)*/
+.pager td:first-child > a, .pager td:first-child > span {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+/*round corners (end of pager)*/
+.pager td:last-child > a, .pager td:last-child > span {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+/*other pages*/
+.pager td > a:hover {
+    font-weight: bold;
+    z-index: 2;
+    color: #23527c;
+    background-color: #cbc9c9;
+    border-color: #ddd;
+}
+
+.pager td > a {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.4285;
+    color: #337ab7;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+/*active page*/
+.pager td > span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.4285;
+    /*font-weight: bold;
+            color: #000000;*/
+    text-decoration: none;
+    /*background-color: #b9b0b0;*/
+    border: 1px solid #ddd;
+    color: #fff;
+    font-weight: bold;
+    background-color: #337ab7;
+}
+
+.pagination > li > a:focus, .pagination > li > a:hover, .pagination > li > span:focus, .pagination > li > span:hover {
+}

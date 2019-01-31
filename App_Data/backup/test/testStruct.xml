@@ -1,0 +1,4791 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<exchange xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" units="m" filename="" filepath="">
+  <batchtest name="Report" internal_name="Report" units="m">
+    <clashtests>
+      <clashtest name="Struct" test_type="hard" status="ok" tolerance="0.001" merge_composites="0">
+        <linkage mode="none"/>
+        <rules>
+          <rule name="Items in same group/block/cell" enabled="1" creator="lcop_clash_adapator_for_lcodpclash_ignore_same_group">
+            <ruleparams/>
+          </rule>
+          <rule name="Piping - Clearance Areas" enabled="1" creator="LcOdpClashIgnoreSpecSelectionSetsPlugin">
+            <ruleparams>
+              <ruleparam specific_data="0">
+                <value>
+                  <data type="name">
+                    <name internal="Piping">Piping</name>
+                  </data>
+                </value>
+              </ruleparam>
+              <ruleparam specific_data="0">
+                <value>
+                  <data type="name">
+                    <name internal="Exclusions
+ClearanceAreas">Exclusions-&gt;ClearanceAreas</name>
+                  </data>
+                </value>
+              </ruleparam>
+            </ruleparams>
+          </rule>
+          <rule name="Equip - Clearance Areas" enabled="1" creator="LcOdpClashIgnoreSpecSelectionSetsPlugin">
+            <ruleparams>
+              <ruleparam specific_data="0">
+                <value>
+                  <data type="name">
+                    <name internal="Equip">Equip</name>
+                  </data>
+                </value>
+              </ruleparam>
+              <ruleparam specific_data="0">
+                <value>
+                  <data type="name">
+                    <name internal="Exclusions
+ClearanceAreas">Exclusions-&gt;ClearanceAreas</name>
+                  </data>
+                </value>
+              </ruleparam>
+            </ruleparams>
+          </rule>
+          <rule name="Piping - Layer 0" enabled="1" creator="LcOdpClashIgnoreSpecSelectionSetsPlugin">
+            <ruleparams>
+              <ruleparam specific_data="0">
+                <value>
+                  <data type="name">
+                    <name internal="Piping">Piping</name>
+                  </data>
+                </value>
+              </ruleparam>
+              <ruleparam specific_data="0">
+                <value>
+                  <data type="name">
+                    <name internal="Exclusions
+Layer 0">Exclusions-&gt;Layer 0</name>
+                  </data>
+                </value>
+              </ruleparam>
+            </ruleparams>
+          </rule>
+          <rule name="Equip - Layer 0" enabled="1" creator="LcOdpClashIgnoreSpecSelectionSetsPlugin">
+            <ruleparams>
+              <ruleparam specific_data="0">
+                <value>
+                  <data type="name">
+                    <name internal="Equip">Equip</name>
+                  </data>
+                </value>
+              </ruleparam>
+              <ruleparam specific_data="0">
+                <value>
+                  <data type="name">
+                    <name internal="Exclusions
+Layer 0">Exclusions-&gt;Layer 0</name>
+                  </data>
+                </value>
+              </ruleparam>
+            </ruleparams>
+          </rule>
+          <rule name="EquipmentComponents" enabled="1" creator="LcOdpClashIgnoreSameSelectionSetPlugin">
+            <ruleparams>
+              <ruleparam specific_data="0">
+                <value>
+                  <data type="name">
+                    <name internal="Exclusions
+EquipComponents">Exclusions-&gt;EquipComponents</name>
+                  </data>
+                </value>
+              </ruleparam>
+            </ruleparams>
+          </rule>
+        </rules>
+        <summary total="78" new="78" active="0" reviewed="0" approved="0" resolved="0">
+          <testtype>Hard</testtype>
+          <teststatus>OK</teststatus>
+        </summary>
+        <clashresults>
+          <clashresult name="Clash1" guid="c548ad8d-febf-4da3-80b3-0384ef7b4bae" href="Struct_files\cd010001.jpg" status="new" distance="-0.130">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.370" y="18.128" z="5.767"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>4BF</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>4A4</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash2" guid="af3726df-0c53-4d26-aa57-4ae71df6c39e" href="Struct_files\cd010002.jpg" status="new" distance="-0.130">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.370" y="17.892" z="2.767"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>47D</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>498</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash3" guid="eea70514-3403-4a5b-8c6c-9e9bbc677722" href="Struct_files\cd010003.jpg" status="new" distance="-0.130">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.370" y="20.628" z="5.767"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>4BC</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>49E</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash4" guid="af799fc8-dce9-44d9-89da-c9857cd3b0af" href="Struct_files\cd010004.jpg" status="new" distance="-0.130">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.370" y="20.628" z="2.767"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>495</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>477</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash5" guid="cadf03a0-fea9-44b0-b493-bb5c04b2e8c8" href="Struct_files\cd010005.jpg" status="new" distance="-0.130">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.370" y="25.628" z="5.767"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3C0</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3A8</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash6" guid="a7655390-7fd4-406b-9f91-b1ab74720810" href="Struct_files\cd010006.jpg" status="new" distance="-0.130">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.370" y="25.628" z="2.767"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3A2</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>38A</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash7" guid="09c31b90-392e-4a1d-90fa-6397e89a2f96" href="Struct_files\cd010007.jpg" status="new" distance="-0.130">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.370" y="23.128" z="2.767"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3A5</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>390</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash8" guid="35f138fd-6bb8-447c-8653-409db7c6c9da" href="Struct_files\cd010008.jpg" status="new" distance="-0.130">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.370" y="23.128" z="5.767"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3C3</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3AE</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash9" guid="81f3b5f0-8cd8-4dca-aef5-3f48a86ccd70" href="Struct_files\cd010009.jpg" status="new" distance="-0.130">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="24.130" y="18.108" z="5.767"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>4A7</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>4BF</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash10" guid="fb2dfa81-4c3b-498d-9f09-6f6825ebdecd" href="Struct_files\cd010010.jpg" status="new" distance="-0.130">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="24.130" y="25.608" z="5.767"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3C0</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3AB</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash11" guid="cead2152-e482-42f5-a0c0-b9de046543e7" href="Struct_files\cd010011.jpg" status="new" distance="-0.130">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="24.130" y="23.108" z="5.767"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3C3</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3B1</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash12" guid="92a5e3f7-19e0-49b6-a888-f600359916e7" href="Struct_files\cd010012.jpg" status="new" distance="-0.130">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="24.130" y="20.608" z="5.767"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>4BC</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>4A1</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash13" guid="54b3bfd6-04f0-4b44-8c98-f6ee030c321b" href="Struct_files\cd010013.jpg" status="new" distance="-0.130">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="24.130" y="18.108" z="2.767"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>480</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>498</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash14" guid="4cf0e5e1-5440-491b-b04d-241c9a0ae01a" href="Struct_files\cd010014.jpg" status="new" distance="-0.130">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="24.130" y="20.608" z="2.767"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>495</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>47A</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash15" guid="e0efb450-734d-4433-bfc6-54b880fa4d0b" href="Struct_files\cd010015.jpg" status="new" distance="-0.130">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="24.130" y="23.108" z="2.767"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3A5</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>393</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash16" guid="fe42045b-d361-4f6e-9667-57c48b93054c" href="Struct_files\cd010016.jpg" status="new" distance="-0.130">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="24.130" y="25.608" z="2.767"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3A2</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>38D</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash17" guid="7709ebe2-8165-46c7-82d2-ad508845bc86" href="Struct_files\cd010017.jpg" status="new" distance="-0.080">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.630" y="20.628" z="0.080"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>477</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3B3</value>
+                </objectattribute>
+                <layer>0</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1200-01-01.dwg</node>
+                  <node>0</node>
+                  <node>ACPPSTRUCTUREPLATE</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>0</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREPLATE</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash18" guid="a1905eb1-8fed-4896-a625-6b100b00b862" href="Struct_files\cd010018.jpg" status="new" distance="-0.080">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.619" y="17.872" z="0.080"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>47D</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3B1</value>
+                </objectattribute>
+                <layer>0</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1200-01-01.dwg</node>
+                  <node>0</node>
+                  <node>ACPPSTRUCTUREPLATE</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>0</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREPLATE</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash19" guid="9c7b8532-ae4d-4e4e-9d8f-eaa14b3b0227" href="Struct_files\cd010019.jpg" status="new" distance="-0.080">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="24.130" y="20.628" z="0.080"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>47A</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3B2</value>
+                </objectattribute>
+                <layer>0</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1200-01-01.dwg</node>
+                  <node>0</node>
+                  <node>ACPPSTRUCTUREPLATE</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>0</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREPLATE</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash20" guid="59b149b6-99c0-488a-a32c-26f9fa9a37ab" href="Struct_files\cd010020.jpg" status="new" distance="-0.080">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.630" y="23.128" z="0.080"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>390</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3B5</value>
+                </objectattribute>
+                <layer>0</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1200-01-01.dwg</node>
+                  <node>0</node>
+                  <node>ACPPSTRUCTUREPLATE</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>0</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREPLATE</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash21" guid="73c573e5-a84d-4b0b-b9c4-f2f24191222a" href="Struct_files\cd010021.jpg" status="new" distance="-0.080">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.630" y="25.628" z="0.080"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>38A</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3B9</value>
+                </objectattribute>
+                <layer>0</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1200-01-01.dwg</node>
+                  <node>0</node>
+                  <node>ACPPSTRUCTUREPLATE</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>0</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREPLATE</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash22" guid="03bd2d09-1ec1-4782-890c-c94d973e329f" href="Struct_files\cd010022.jpg" status="new" distance="-0.080">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="24.130" y="25.628" z="0.080"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>38D</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3B8</value>
+                </objectattribute>
+                <layer>0</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1200-01-01.dwg</node>
+                  <node>0</node>
+                  <node>ACPPSTRUCTUREPLATE</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>0</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREPLATE</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash23" guid="656b81e4-115c-49d6-9dcb-8b628bc1b203" href="Struct_files\cd010023.jpg" status="new" distance="-0.080">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="24.130" y="23.128" z="0.080"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>393</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3B4</value>
+                </objectattribute>
+                <layer>0</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1200-01-01.dwg</node>
+                  <node>0</node>
+                  <node>ACPPSTRUCTUREPLATE</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>0</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREPLATE</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash24" guid="1fa67aa6-c8f9-4c77-9b78-6a15be96f750" href="Struct_files\cd010024.jpg" status="new" distance="-0.080">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="24.130" y="18.128" z="0.080"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>480</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3B0</value>
+                </objectattribute>
+                <layer>0</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1200-01-01.dwg</node>
+                  <node>0</node>
+                  <node>ACPPSTRUCTUREPLATE</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>0</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREPLATE</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash25" guid="1c77d499-02d0-4d99-9a37-8fa002b7a785" href="Struct_files\cd010025.jpg" status="new" distance="-0.027">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.500" y="17.991" z="3.017"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>498</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>4A4</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash26" guid="a096ef13-44c9-4577-8d3b-0cef41c87438" href="Struct_files\cd010026.jpg" status="new" distance="-0.027">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="24.119" y="17.974" z="3.027"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>4A7</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>498</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash27" guid="12786cdb-94be-4b72-90d5-a332073f4a0b" href="Struct_files\cd010027.jpg" status="new" distance="-0.027">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.500" y="20.491" z="3.017"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>495</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>49E</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash28" guid="8450a104-762d-477d-982c-c5dc0517948c" href="Struct_files\cd010028.jpg" status="new" distance="-0.027">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="24.119" y="25.384" z="3.027"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3A2</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3AB</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash29" guid="ec6e1708-2c41-4245-ae2b-be976fa9fe2e" href="Struct_files\cd010029.jpg" status="new" distance="-0.027">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="24.119" y="22.884" z="3.027"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3A5</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3B1</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash30" guid="033859dc-8191-47f4-a0dc-21366660026c" href="Struct_files\cd010030.jpg" status="new" distance="-0.027">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="24.119" y="20.384" z="3.027"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>495</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>4A1</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash31" guid="2792f66c-10d0-4cce-a0b0-ed502bcfcb49" href="Struct_files\cd010031.jpg" status="new" distance="-0.027">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.500" y="22.991" z="3.017"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3A5</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3AE</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash32" guid="b2e2c257-76cd-4f6d-b540-631501f01bd5" href="Struct_files\cd010032.jpg" status="new" distance="-0.027">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.500" y="25.491" z="3.017"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3A2</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3A8</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash33" guid="85225c72-d064-4b1c-95bc-d92dce716a71" href="Struct_files\cd010033.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.618" y="20.481" z="2.767"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>477</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>489</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash34" guid="93594d04-b916-4954-8fcd-19bc7c18caf9" href="Struct_files\cd010034.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.618" y="20.481" z="5.767"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>49E</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>4B0</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash35" guid="69a8de56-39cc-497b-a56f-c72f8f09403e" href="Struct_files\cd010035.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.614" y="18.014" z="3.027"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>4A4</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>489</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash36" guid="387c1aaf-e8a6-4035-a92b-d94c27980ae9" href="Struct_files\cd010036.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.614" y="18.014" z="5.778"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>4A4</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>4B0</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash37" guid="824ce7d7-b152-464d-ba8a-40902f239062" href="Struct_files\cd010037.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.614" y="18.014" z="2.778"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>47D</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>489</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash38" guid="ed2cdcec-64f7-45d4-84f8-9bd2972a8022" href="Struct_files\cd010038.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="24.118" y="25.481" z="5.767"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3AB</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3BA</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash39" guid="7d59b9bf-0e78-4e10-955f-a5b9efd4ddad" href="Struct_files\cd010039.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="24.114" y="23.014" z="5.778"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3B1</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3BA</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash40" guid="0abd78aa-dcf9-4db7-98ac-684e22e59b2e" href="Struct_files\cd010040.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="24.114" y="23.014" z="3.027"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3B1</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>39C</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash41" guid="c15bb1cf-6ec5-4193-a258-e7baacce42f9" href="Struct_files\cd010041.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="24.118" y="20.481" z="5.767"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>4A1</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>4B6</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash42" guid="0cda7a47-150c-47aa-9d85-6ce4a29e6dd9" href="Struct_files\cd010042.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="24.114" y="18.014" z="5.778"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>4A7</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>4B6</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash43" guid="8121bbe7-dc8d-4bbb-8352-61ffc02e8698" href="Struct_files\cd010043.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="24.114" y="18.014" z="3.027"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>4A7</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>48F</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash44" guid="4bcf0983-7d26-4e0c-9bca-d67042751bef" href="Struct_files\cd010044.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="24.118" y="20.481" z="2.767"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>47A</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>48F</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash45" guid="93ce2329-fbe6-4110-90a2-4e970d27b589" href="Struct_files\cd010045.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="24.114" y="23.014" z="2.778"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>393</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>39C</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash46" guid="441cebb7-daf9-423b-8bd9-5c4b573a3135" href="Struct_files\cd010046.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="24.118" y="25.481" z="2.767"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>38D</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>39C</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash47" guid="c69a801e-4095-4c08-a175-c43cdd02c57c" href="Struct_files\cd010047.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="24.114" y="18.014" z="2.778"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>480</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>48F</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash48" guid="a935896c-b01b-4bcf-8be8-81aab48d0393" href="Struct_files\cd010048.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.618" y="25.481" z="2.767"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>38A</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>396</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash49" guid="10bd10b9-1666-4f45-ae1e-70386948832f" href="Struct_files\cd010049.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.614" y="23.014" z="2.778"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>390</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>396</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash50" guid="5f9e51b6-300e-44b8-8f1f-9fa6dd7003f6" href="Struct_files\cd010050.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.614" y="23.014" z="3.027"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3AE</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>396</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash51" guid="23e6d7a1-0ef8-4e06-bb8d-aa81884eb2b2" href="Struct_files\cd010051.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.614" y="23.014" z="5.778"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3B4</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3AE</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash52" guid="3fa73e9a-b929-4782-9836-9d01a15c93d0" href="Struct_files\cd010052.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.618" y="25.481" z="5.767"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3B4</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3A8</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash53" guid="fec1c1b4-0e7b-4fa4-a55d-816dc9974c15" href="Struct_files\cd010053.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.614" y="20.514" z="2.778"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>399</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>477</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash54" guid="edf66ebf-e1d5-4c37-a850-956a20379d6b" href="Struct_files\cd010054.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.614" y="20.514" z="5.778"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3B7</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>49E</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash55" guid="4f9b63c9-9267-4fda-aef6-803fadde665d" href="Struct_files\cd010055.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.614" y="20.514" z="3.027"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>399</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>49E</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash56" guid="6903915f-77c6-4d87-896b-96fea9ce45fa" href="Struct_files\cd010056.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="23.886" y="22.986" z="3.027"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3B1</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>39F</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash57" guid="42ecdbf4-e560-4854-a90e-a3b229f41606" href="Struct_files\cd010057.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="24.118" y="22.981" z="5.767"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3B1</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3BD</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash58" guid="3ddb07f8-1db7-4f21-8829-0fae4df78bd5" href="Struct_files\cd010058.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="24.114" y="20.514" z="3.027"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>4A1</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>39F</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash59" guid="a6ddeb14-8fd6-480c-b1e6-c3c7fd9d5236" href="Struct_files\cd010059.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="23.882" y="20.519" z="5.767"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>4A1</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3BD</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash60" guid="62a247a2-4195-48f9-b3b3-e56cda99654a" href="Struct_files\cd010060.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="23.882" y="20.519" z="2.767"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>47A</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>39F</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash61" guid="3db33421-4411-40ea-9204-ae4d9df4a790" href="Struct_files\cd010061.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.386" y="17.986" z="5.778"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>4B3</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>4A4</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash62" guid="dcb21c16-9fa2-44ec-bb53-ae9420993277" href="Struct_files\cd010062.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.386" y="17.986" z="3.027"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>48C</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>4A4</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash63" guid="b2acabbe-f4bf-4bdf-9af9-71b4d5e8ea74" href="Struct_files\cd010063.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.618" y="17.981" z="2.767"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>47D</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>48C</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash64" guid="1252fc30-bf82-4ad7-b083-cbb69b0ba579" href="Struct_files\cd010064.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="23.886" y="17.986" z="3.027"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>492</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>4A7</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash65" guid="6fc0d210-8495-4afb-b632-514e5e417b89" href="Struct_files\cd010065.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="23.886" y="17.986" z="5.778"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>4B9</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>4A7</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash66" guid="e1f42570-f18e-408f-81e2-20c2337f043d" href="Struct_files\cd010066.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.618" y="22.981" z="5.767"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3AE</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3B7</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash67" guid="08f68a9b-714a-4d79-8af7-626c9aebce94" href="Struct_files\cd010067.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.618" y="22.981" z="2.767"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>390</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>399</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash68" guid="0d3febe7-8afd-4257-b18d-44575dc28810" href="Struct_files\cd010068.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.386" y="22.986" z="3.027"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3AE</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>399</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash69" guid="f274f39e-9792-47ac-848f-5bd9355c6bf4" href="Struct_files\cd010069.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="24.118" y="22.981" z="2.767"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>393</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>39F</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash70" guid="d57c3f4c-84ed-43cd-8d99-54ad05440855" href="Struct_files\cd010070.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="24.118" y="17.981" z="2.767"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>480</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>492</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash71" guid="c4db622e-5648-4a63-8cbc-95f7d860b981" href="Struct_files\cd010071.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.386" y="20.486" z="3.027"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>49E</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>489</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash72" guid="cd542a71-c68d-492f-9955-b53409c31e8f" href="Struct_files\cd010072.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="23.886" y="25.486" z="3.027"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3AB</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>39C</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash73" guid="e4a1b084-2edc-4ae5-bb99-bf2c3f0f2356" href="Struct_files\cd010073.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="23.886" y="20.486" z="3.027"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>4A1</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>48F</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash74" guid="b1505d91-9202-4e57-a387-6fcbc1186af2" href="Struct_files\cd010074.jpg" status="new" distance="-0.014">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.386" y="25.486" z="3.027"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3A8</value>
+                </objectattribute>
+                <layer>Columns</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Columns</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Columns</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>396</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash75" guid="db12b3f4-dde6-4ed0-ae0d-a2a1cd32559c" href="Struct_files\cd010075.jpg" status="new" distance="-0.010">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="24.128" y="20.628" z="6.016"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>4BC</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3BD</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash76" guid="376f3a24-7f5f-4449-981e-f3c3478e3b7c" href="Struct_files\cd010076.jpg" status="new" distance="-0.010">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="24.128" y="20.628" z="3.016"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>495</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>39F</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash77" guid="aa4a1533-e591-4d76-9c40-e66f9d44859e" href="Struct_files\cd010077.jpg" status="new" distance="-0.010">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.372" y="20.628" z="5.768"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>4BC</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>3B7</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash78" guid="3da9b625-4348-485f-9fdf-31f2c75dbadc" href="Struct_files\cd010078.jpg" status="new" distance="-0.010">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.372" y="20.628" z="2.768"/>
+            </clashpoint>
+            <createddate>
+              <date year="2016" month="5" day="2" hour="22" minute="46" second="10"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>495</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-01.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Entity Handle</name>
+                  <value>399</value>
+                </objectattribute>
+                <layer>Beams</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>STR-01-1000-01-02.dwg</node>
+                  <node>Beams</node>
+                  <node>ACPPSTRUCTUREBEAM</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Beams</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>ACPPSTRUCTUREBEAM</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+        </clashresults>
+      </clashtest>
+    </clashtests>
+    <selectionsets/>
+  </batchtest>
+</exchange>

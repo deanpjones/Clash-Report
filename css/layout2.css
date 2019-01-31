@@ -1,0 +1,223 @@
+﻿html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    margin: 0em 1em 1em 1em;
+    /*font-size: 12px;*/
+    font-size: 1.0em;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+    body * {
+        /*background-color: gray;*/
+        /*margin: 3px;*/
+        padding: 0.5em;
+        /*border: solid;*/
+    }
+
+#page_layout {
+    background-color: lightgray;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 2em;
+    /*line-height: 50px;  the same as your div height */
+}
+
+    #page_layout * {
+        /*border: dotted;*/
+    }
+
+
+/*@media (orientation: portrait) {*/
+/*@media (orientation: landscape) {*/
+@media screen and (min-width: 600px) {
+    #page_layout {
+        display: grid;
+        /*grid-template-areas: "title title title" "menu menu menu" "notification notification notification" "grid grid image" "footer footer footer";*/
+        grid-template-areas: "title title title" "menu menu menu" "notification notification notification" "grid grid grid" "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.25fr 0.16fr 0.25fr 4fr 1fr;
+    }
+}
+
+
+/* names for reference, see above... */
+#title {
+    grid-area: title;
+    /*margin: 0px;*/
+    /*font-size: 1.6em;*/
+    background-color: #7664B6; /*purple*/
+    /*padding-top: 0px;*/
+    /*padding-top: 0.5em;
+    padding-bottom: 0.5em;*/
+}
+
+#menu {
+    grid-area: menu;
+    /*margin: 0px;*/
+    background-color: #5A9BAC; /*blue*/
+    /*font-size: small;*/
+    /*padding-top: 0.5em;
+    padding-bottom: 0.5em;*/
+}
+
+#notification {
+    grid-area: notification;
+    /*margin-bottom: 6px;*/
+    /*margin: 0px;*/
+    background-color: #E0AB47; /*yellow*/
+    text-align: center;
+    /*padding-top: 0.5em;
+    padding-bottom: 0.5em;*/
+    /*padding-left: 3em;*/
+}
+
+#dropdown #dropdownProjName {
+    margin-top: 6px;
+}
+
+#grid {
+    grid-area: grid;
+    line-height: 1em;
+    margin-top: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    background-color: #F5F1F7; /*white gray*/
+    /*align-content: center;*/
+    padding: 12px;
+    z-index: 1;
+}
+
+#selectafile {
+    margin: 1em;
+    padding: 1em;
+    background-color: #7664B6;
+}
+
+#image {
+    grid-area: image;
+    margin-top: 1em;
+    margin-right: 0.5em;
+    background-color: #F5F1F7; /*white gray*/
+    /*align-content: center;*/
+    padding: 12px;
+    z-index: 1;
+}
+
+#footer {
+    grid-area: footer;
+    margin-top: 1em;
+    margin-right: 1em;
+    /*background-color: #F5F1F7; white gray*/
+    font-size: 8px;
+    /*float: right;*/
+    text-align: right;
+    /*vertical-align: bottom;*/
+}
+
+#form1, div.aspNetHidden {
+    background-color: white;
+}
+
+.shadow {
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+}
+
+.offset {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+/*overrides w3...*/
+.w3-panel {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.w3-button {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+h3, a, i {
+    margin: 0px;
+}
+
+/* GridView formatting */
+td {
+    padding: 3px 6px 3px 6px;
+    font-size: 11px;
+}
+
+th {
+    font-weight: normal;
+    font-size: 10px;
+}
+
+/*highlight rows*/
+tr:hover {
+    /*background-color: #ffa;*/
+    opacity: 0.75;
+    background-color: #E0AB47;
+}
+
+/*titles*/
+.title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/*background hatch*/
+.hatch_stripe {
+    background: repeating-linear-gradient( -55deg, #222, #222 10px, #333 10px, #333 20px );
+}
+
+.hatch_stripe2 {
+    background: repeating-linear-gradient( -45deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 10px, rgba(0, 0, 0, 0.3) 10px, rgba(0, 0, 0, 0.3) 20px ), url(http://s3-us-west-2.amazonaws.com/s.cdpn.io/3/old_map_@2X.png);
+}
+
+.hatch_radial {
+    background: repeating-radial-gradient(#aea6ca, #988a8a, #d6d6d6);
+}
+
+/*ALERT POPUP*/
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+    .closebtn:hover {
+        color: black;
+    }
+
+/* fade out animation */
+@keyframes myFadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.fadeout {
+    -webkit-animation: myFadeOut 4s 1s infinite linear alternate;
+    -moz-animation: myFadeOut 4s 1s infinite linear alternate;
+    -ms-animation: myFadeOut 4s 1s infinite linear alternate;
+    -o-animation: myFadeOut 4s 1s infinite linear alternate;
+    animation: myFadeOut 4s 1s infinite linear alternate;
+}

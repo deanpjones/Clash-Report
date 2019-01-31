@@ -1,0 +1,165 @@
+﻿/* 
+    STYLE.CSS 
+    DEAN JONES
+    Mar.27, 2018
+*/
+
+/* AMEC COLORS 
+    HTML code:	#6B3472         PURPLE
+    HTML code:	#0FB2BC         BLUE 
+    HTML code:	#D0DB27         GREEN-YELLOW
+*/
+
+body {
+    margin-top: 1%;
+    margin-left: 6%;
+    margin-right: 6%;
+    padding: 3px;
+
+    /*background-color: #777777;*/
+    font-size: 12px;
+    font-family: Tahoma, Geneva, sans-serif;
+    /*table-layout: fixed;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;*/
+}
+.no_padding_margins {
+    padding: 0px;
+    margin: 0px;
+}
+/*h1, h2, h3, p {
+    padding-left: 6px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}*/
+p {
+    padding-left: 16px;
+}
+.shadow {
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+}
+.offset {
+    margin-left: -30px;
+    margin-right: -10px;
+}
+/*override w3-panel*/
+.w3-panel {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#group {
+    /*background-color: #8BC980; green */
+    display: contents;
+    line-height: 30px;
+}
+#title {
+    font-size: 1.6em;
+    background-color: #7664B6; /*purple*/
+    padding-top: 0px;
+}
+#menubar {
+    background-color: #5A9BAC; /*blue*/
+    font-size: 1.2em;
+    padding-bottom: 0px;
+}
+#notificationbar {
+    background-color: #E0AB47; /*yellow*/
+    padding-top: 0px;
+}
+#content {
+    background-color: #F5F1F7; /*white gray*/
+    /*align-content: center;*/
+    padding: 12px;
+    z-index: -1;
+}
+footer {
+    font-size: 8px;
+    float: right;
+    margin-top: 24px;
+}
+.stripe-4 {
+    color: white;
+    background: repeating-linear-gradient( -55deg, #222, #222 10px, #333 10px, #333 20px );
+}
+/* GRID STYLES     https://weblogs.asp.net/kevinbrammer/glassy-black-gridview-theme */
+.GridViewStyle {
+    font-family: Tahoma, Geneva, sans-serif; /*Consolas, Arial, Sans-Serif;*/
+    font-size: small;
+    table-layout: auto;
+    border-collapse: collapse;
+    border: #1d1d1d 5px solid;
+}
+/*Header and Pager styles*/
+.HeaderStyle, .PagerStyle /*Common Styles*/ {
+    background-image: url(Images/HeaderGlassBlack.jpg);
+    background-position: center;
+    background-repeat: repeat-x;
+    /*background-color: #1d1d1d;*/
+    background-color: #6B3472;
+    /*background-color: #0FB2BC;*/
+    /*background-color: #D0DB27;*/
+}
+
+    .HeaderStyle th {
+        padding: 5px;
+        color: #ffffff;
+    }
+
+    .HeaderStyle a {
+        text-decoration: none;
+        color: #ffffff;
+        display: block;
+        text-align: left;
+        font-weight: normal;
+    }
+
+    .PagerStyle table {
+        text-align: center;
+        margin: auto;
+    }
+
+        .PagerStyle table td {
+            border: 0px;
+            padding: 5px;
+        }
+
+    .PagerStyle td {
+        border-top: #1d1d1d 3px solid;
+    }
+
+    .PagerStyle a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 2px 10px 2px 10px;
+        border-top: solid 1px #777777;
+        border-right: solid 1px #333333;
+        border-bottom: solid 1px #333333;
+        border-left: solid 1px #777777;
+    }
+
+    .PagerStyle span {
+        font-weight: bold;
+        color: #FFFFFF;
+        text-decoration: none;
+        padding: 2px 10px 2px 10px;
+    }
+/*RowStyles*/
+.RowStyle td, .AltRowStyle td, .SelectedRowStyle td, .EditRowStyle td /*Common Styles*/ {
+    padding: 5px;
+    border-right: solid 1px #1d1d1d;
+}
+
+.RowStyle td {
+    background-color: #c9c9c9;
+}
+
+.AltRowStyle td {
+    background-color: #f0f0f0;
+}
+
+.SelectedRowStyle td {
+    background-color: #ffff66;
+}
+/* end GRID STYLES */
+

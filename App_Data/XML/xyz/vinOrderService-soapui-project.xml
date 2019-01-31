@@ -1,0 +1,1123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="b1074589-25a0-4254-9fa1-995c1a5f7039" activeEnvironment="Default" name="vinContact" soapui-version="5.3.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="015f56d3-fde8-4f43-bc6c-0db111bf6db1" wsaVersion="NONE" name="ContactService.cfcSoapBinding" type="wsdl" bindingName="{http://V300}ContactService.cfcSoapBinding" soapVersion="1_1" anonymous="optional" definition="https://webservices.vin65.com/V300/ContactService.cfc?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="https://webservices.vin65.com/V300/ContactService.cfc?wsdl"><con:part><con:url>https://webservices.vin65.com/V300/ContactService.cfc?wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://V300" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://V300" xmlns:intf="http://V300" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns1="http://searchContactTypes.contact.V300" xmlns:tns10="http://searchShippingAddresses.contact.V300" xmlns:tns11="http://getContactStatus.contact.V300" xmlns:tns12="http://getContactType.contact.V300" xmlns:tns13="http://addUpdateContactType.contact.V300" xmlns:tns14="http://searchMergedContacts.contact.V300" xmlns:tns15="http://getContact.contact.V300" xmlns:tns2="http://request.base.V300" xmlns:tns3="http://response.base.V300" xmlns:tns4="http://_contact.contact.V300" xmlns:tns5="http://rpc.xml.coldfusion" xmlns:tns6="http://mergeContact.contact.V300" xmlns:tns7="http://removeContactTypeFromContact.contact.V300" xmlns:tns8="http://addContactTypeToContact.contact.V300" xmlns:tns9="http://searchContacts.contact.V300" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--WSDL created by ColdFusion version 9,0,1,274733-->
+  <wsdl:types>
+    <schema targetNamespace="http://request.base.V300" xmlns="http://www.w3.org/2001/XMLSchema">
+      <import namespace="http://getContact.contact.V300"/>
+      <import namespace="http://mergeContact.contact.V300"/>
+      <import namespace="http://V300"/>
+      <import namespace="http://getContactType.contact.V300"/>
+      <import namespace="http://addUpdateContactType.contact.V300"/>
+      <import namespace="http://rpc.xml.coldfusion"/>
+      <import namespace="http://response.base.V300"/>
+      <import namespace="http://addContactTypeToContact.contact.V300"/>
+      <import namespace="http://searchShippingAddresses.contact.V300"/>
+      <import namespace="http://searchContacts.contact.V300"/>
+      <import namespace="http://removeContactTypeFromContact.contact.V300"/>
+      <import namespace="http://searchContactTypes.contact.V300"/>
+      <import namespace="http://_contact.contact.V300"/>
+      <import namespace="http://getContactStatus.contact.V300"/>
+      <import namespace="http://searchMergedContacts.contact.V300"/>
+      <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+      <complexType name="Security">
+        <sequence>
+          <element name="Password" nillable="true" type="xsd:string"/>
+          <element name="Username" nillable="true" type="xsd:string"/>
+        </sequence>
+      </complexType>
+      <complexType name="Request">
+        <sequence>
+          <element name="Security" nillable="true" type="tns2:Security"/>
+        </sequence>
+      </complexType>
+    </schema>
+    <schema targetNamespace="http://searchContactTypes.contact.V300" xmlns="http://www.w3.org/2001/XMLSchema">
+      <import namespace="http://getContact.contact.V300"/>
+      <import namespace="http://mergeContact.contact.V300"/>
+      <import namespace="http://V300"/>
+      <import namespace="http://getContactType.contact.V300"/>
+      <import namespace="http://addUpdateContactType.contact.V300"/>
+      <import namespace="http://rpc.xml.coldfusion"/>
+      <import namespace="http://response.base.V300"/>
+      <import namespace="http://addContactTypeToContact.contact.V300"/>
+      <import namespace="http://searchShippingAddresses.contact.V300"/>
+      <import namespace="http://searchContacts.contact.V300"/>
+      <import namespace="http://removeContactTypeFromContact.contact.V300"/>
+      <import namespace="http://request.base.V300"/>
+      <import namespace="http://_contact.contact.V300"/>
+      <import namespace="http://getContactStatus.contact.V300"/>
+      <import namespace="http://searchMergedContacts.contact.V300"/>
+      <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+      <complexType name="Request">
+        <complexContent>
+          <extension base="tns2:Request">
+            <sequence>
+              <element name="ContactType" nillable="true" type="xsd:string"/>
+              <element name="ContactTypeID" nillable="true" type="xsd:string"/>
+              <element name="DateModifiedFrom" nillable="true" type="xsd:dateTime"/>
+              <element name="DateModifiedTo" nillable="true" type="xsd:dateTime"/>
+              <element name="MaxRows" nillable="true" type="xsd:double"/>
+              <element name="Page" nillable="true" type="xsd:double"/>
+              <element name="WebsiteIDs" nillable="true" type="xsd:string"/>
+            </sequence>
+          </extension>
+        </complexContent>
+      </complexType>
+      <complexType name="Response">
+        <complexContent>
+          <extension base="tns3:Response">
+            <sequence>
+              <element name="ContactTypes" nillable="true" type="impl:ArrayOf_tns4_ContactType"/>
+            </sequence>
+          </extension>
+        </complexContent>
+      </complexType>
+    </schema>
+    <schema targetNamespace="http://response.base.V300" xmlns="http://www.w3.org/2001/XMLSchema">
+      <import namespace="http://getContact.contact.V300"/>
+      <import namespace="http://mergeContact.contact.V300"/>
+      <import namespace="http://V300"/>
+      <import namespace="http://getContactType.contact.V300"/>
+      <import namespace="http://addUpdateContactType.contact.V300"/>
+      <import namespace="http://rpc.xml.coldfusion"/>
+      <import namespace="http://addContactTypeToContact.contact.V300"/>
+      <import namespace="http://searchShippingAddresses.contact.V300"/>
+      <import namespace="http://searchContacts.contact.V300"/>
+      <import namespace="http://removeContactTypeFromContact.contact.V300"/>
+      <import namespace="http://searchContactTypes.contact.V300"/>
+      <import namespace="http://request.base.V300"/>
+      <import namespace="http://_contact.contact.V300"/>
+      <import namespace="http://getContactStatus.contact.V300"/>
+      <import namespace="http://searchMergedContacts.contact.V300"/>
+      <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+      <complexType name="Error">
+        <sequence>
+          <element name="ErrorCode" nillable="true" type="xsd:string"/>
+          <element name="ErrorMessage" nillable="true" type="xsd:string"/>
+        </sequence>
+      </complexType>
+      <complexType name="Response">
+        <sequence>
+          <element name="Errors" nillable="true" type="impl:ArrayOf_tns3_Error"/>
+          <element name="IsSuccessful" nillable="true" type="xsd:boolean"/>
+          <element name="RecordCount" nillable="true" type="xsd:double"/>
+        </sequence>
+      </complexType>
+    </schema>
+    <schema targetNamespace="http://V300" xmlns="http://www.w3.org/2001/XMLSchema">
+      <import namespace="http://getContact.contact.V300"/>
+      <import namespace="http://mergeContact.contact.V300"/>
+      <import namespace="http://getContactType.contact.V300"/>
+      <import namespace="http://addUpdateContactType.contact.V300"/>
+      <import namespace="http://rpc.xml.coldfusion"/>
+      <import namespace="http://response.base.V300"/>
+      <import namespace="http://addContactTypeToContact.contact.V300"/>
+      <import namespace="http://searchShippingAddresses.contact.V300"/>
+      <import namespace="http://searchContacts.contact.V300"/>
+      <import namespace="http://removeContactTypeFromContact.contact.V300"/>
+      <import namespace="http://searchContactTypes.contact.V300"/>
+      <import namespace="http://request.base.V300"/>
+      <import namespace="http://_contact.contact.V300"/>
+      <import namespace="http://getContactStatus.contact.V300"/>
+      <import namespace="http://searchMergedContacts.contact.V300"/>
+      <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+      <complexType name="ArrayOf_tns3_Error">
+        <complexContent>
+          <restriction base="soapenc:Array">
+            <attribute ref="soapenc:arrayType" wsdl:arrayType="tns3:Error[]"/>
+          </restriction>
+        </complexContent>
+      </complexType>
+      <complexType name="ArrayOf_tns4_ContactType">
+        <complexContent>
+          <restriction base="soapenc:Array">
+            <attribute ref="soapenc:arrayType" wsdl:arrayType="tns4:ContactType[]"/>
+          </restriction>
+        </complexContent>
+      </complexType>
+      <complexType name="ArrayOf_tns4_Contact">
+        <complexContent>
+          <restriction base="soapenc:Array">
+            <attribute ref="soapenc:arrayType" wsdl:arrayType="tns4:Contact[]"/>
+          </restriction>
+        </complexContent>
+      </complexType>
+      <complexType name="ArrayOf_tns4_ShippingAddress">
+        <complexContent>
+          <restriction base="soapenc:Array">
+            <attribute ref="soapenc:arrayType" wsdl:arrayType="tns4:ShippingAddress[]"/>
+          </restriction>
+        </complexContent>
+      </complexType>
+      <complexType name="ArrayOf_tns4_MergedContact">
+        <complexContent>
+          <restriction base="soapenc:Array">
+            <attribute ref="soapenc:arrayType" wsdl:arrayType="tns4:MergedContact[]"/>
+          </restriction>
+        </complexContent>
+      </complexType>
+    </schema>
+    <schema targetNamespace="http://_contact.contact.V300" xmlns="http://www.w3.org/2001/XMLSchema">
+      <import namespace="http://getContact.contact.V300"/>
+      <import namespace="http://mergeContact.contact.V300"/>
+      <import namespace="http://V300"/>
+      <import namespace="http://getContactType.contact.V300"/>
+      <import namespace="http://addUpdateContactType.contact.V300"/>
+      <import namespace="http://rpc.xml.coldfusion"/>
+      <import namespace="http://response.base.V300"/>
+      <import namespace="http://addContactTypeToContact.contact.V300"/>
+      <import namespace="http://searchShippingAddresses.contact.V300"/>
+      <import namespace="http://searchContacts.contact.V300"/>
+      <import namespace="http://removeContactTypeFromContact.contact.V300"/>
+      <import namespace="http://searchContactTypes.contact.V300"/>
+      <import namespace="http://request.base.V300"/>
+      <import namespace="http://getContactStatus.contact.V300"/>
+      <import namespace="http://searchMergedContacts.contact.V300"/>
+      <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+      <complexType name="ContactType">
+        <sequence>
+          <element name="ContactType" nillable="true" type="xsd:string"/>
+          <element name="ContactTypeID" nillable="true" type="xsd:string"/>
+          <element name="DateAdded" nillable="true" type="xsd:dateTime"/>
+          <element name="DateModified" nillable="true" type="xsd:dateTime"/>
+          <element name="IsPublic" nillable="true" type="xsd:string"/>
+          <element name="WebsiteID" nillable="true" type="xsd:string"/>
+        </sequence>
+      </complexType>
+      <complexType name="Contact">
+        <sequence>
+          <element name="Address" nillable="true" type="xsd:string"/>
+          <element name="Address2" nillable="true" type="xsd:string"/>
+          <element name="BirthDate" nillable="true" type="xsd:dateTime"/>
+          <element name="City" nillable="true" type="xsd:string"/>
+          <element name="Company" nillable="true" type="xsd:string"/>
+          <element name="ContactID" nillable="true" type="xsd:string"/>
+          <element name="CountryCode" nillable="true" type="xsd:string"/>
+          <element name="CustomerNumber" nillable="true" type="xsd:double"/>
+          <element name="DateAdded" nillable="true" type="xsd:dateTime"/>
+          <element name="DateModified" nillable="true" type="xsd:dateTime"/>
+          <element name="Email" nillable="true" type="xsd:string"/>
+          <element name="EmailStatus" nillable="true" type="xsd:string"/>
+          <element name="FirstName" nillable="true" type="xsd:string"/>
+          <element name="IsNonTaxable" nillable="true" type="xsd:boolean"/>
+          <element name="LastLoginDate" nillable="true" type="xsd:dateTime"/>
+          <element name="LastName" nillable="true" type="xsd:string"/>
+          <element name="LastOrderDate" nillable="true" type="xsd:dateTime"/>
+          <element name="LifetimeValue" nillable="true" type="xsd:double"/>
+          <element name="MasterContactID" nillable="true" type="xsd:string"/>
+          <element name="OrderCount" nillable="true" type="xsd:double"/>
+          <element name="Phone" nillable="true" type="xsd:string"/>
+          <element name="SourceCode" nillable="true" type="xsd:string"/>
+          <element name="StateCode" nillable="true" type="xsd:string"/>
+          <element name="Title" nillable="true" type="xsd:string"/>
+          <element name="Username" nillable="true" type="xsd:string"/>
+          <element name="WebsiteID" nillable="true" type="xsd:string"/>
+          <element name="WholesaleNumber" nillable="true" type="xsd:string"/>
+          <element name="ZipCode" nillable="true" type="xsd:string"/>
+        </sequence>
+      </complexType>
+      <complexType name="ShippingAddress">
+        <sequence>
+          <element name="Address" nillable="true" type="xsd:string"/>
+          <element name="Address2" nillable="true" type="xsd:string"/>
+          <element name="Birthdate" nillable="true" type="xsd:dateTime"/>
+          <element name="City" nillable="true" type="xsd:string"/>
+          <element name="Company" nillable="true" type="xsd:string"/>
+          <element name="ContactID" nillable="true" type="xsd:string"/>
+          <element name="CountryCode" nillable="true" type="xsd:string"/>
+          <element name="DateAdded" nillable="true" type="xsd:dateTime"/>
+          <element name="DateModified" nillable="true" type="xsd:dateTime"/>
+          <element name="Email" nillable="true" type="xsd:string"/>
+          <element name="Firstname" nillable="true" type="xsd:string"/>
+          <element name="Lastname" nillable="true" type="xsd:string"/>
+          <element name="Phone" nillable="true" type="xsd:string"/>
+          <element name="ShippingAddressID" nillable="true" type="xsd:string"/>
+          <element name="StateCode" nillable="true" type="xsd:string"/>
+          <element name="WebsiteID" nillable="true" type="xsd:string"/>
+          <element name="ZipCode" nillable="true" type="xsd:string"/>
+        </sequence>
+      </complexType>
+      <complexType name="MergedContact">
+        <sequence>
+          <element name="ContactID" nillable="true" type="xsd:string"/>
+          <element name="DateMerged" nillable="true" type="xsd:dateTime"/>
+          <element name="MergedIntoContactID" nillable="true" type="xsd:string"/>
+          <element name="WebsiteID" nillable="true" type="xsd:string"/>
+        </sequence>
+      </complexType>
+    </schema>
+    <schema targetNamespace="http://rpc.xml.coldfusion" xmlns="http://www.w3.org/2001/XMLSchema">
+      <import namespace="http://getContact.contact.V300"/>
+      <import namespace="http://mergeContact.contact.V300"/>
+      <import namespace="http://V300"/>
+      <import namespace="http://getContactType.contact.V300"/>
+      <import namespace="http://addUpdateContactType.contact.V300"/>
+      <import namespace="http://response.base.V300"/>
+      <import namespace="http://addContactTypeToContact.contact.V300"/>
+      <import namespace="http://searchShippingAddresses.contact.V300"/>
+      <import namespace="http://searchContacts.contact.V300"/>
+      <import namespace="http://removeContactTypeFromContact.contact.V300"/>
+      <import namespace="http://searchContactTypes.contact.V300"/>
+      <import namespace="http://request.base.V300"/>
+      <import namespace="http://_contact.contact.V300"/>
+      <import namespace="http://getContactStatus.contact.V300"/>
+      <import namespace="http://searchMergedContacts.contact.V300"/>
+      <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+      <complexType name="CFCInvocationException">
+        <sequence/>
+      </complexType>
+    </schema>
+    <schema targetNamespace="http://mergeContact.contact.V300" xmlns="http://www.w3.org/2001/XMLSchema">
+      <import namespace="http://getContact.contact.V300"/>
+      <import namespace="http://V300"/>
+      <import namespace="http://getContactType.contact.V300"/>
+      <import namespace="http://addUpdateContactType.contact.V300"/>
+      <import namespace="http://rpc.xml.coldfusion"/>
+      <import namespace="http://response.base.V300"/>
+      <import namespace="http://addContactTypeToContact.contact.V300"/>
+      <import namespace="http://searchShippingAddresses.contact.V300"/>
+      <import namespace="http://searchContacts.contact.V300"/>
+      <import namespace="http://removeContactTypeFromContact.contact.V300"/>
+      <import namespace="http://searchContactTypes.contact.V300"/>
+      <import namespace="http://request.base.V300"/>
+      <import namespace="http://_contact.contact.V300"/>
+      <import namespace="http://getContactStatus.contact.V300"/>
+      <import namespace="http://searchMergedContacts.contact.V300"/>
+      <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+      <complexType name="Request">
+        <complexContent>
+          <extension base="tns2:Request">
+            <sequence>
+              <element name="AltContactID" nillable="true" type="xsd:string"/>
+              <element name="ContactID" nillable="true" type="xsd:string"/>
+              <element name="CustomerNumber" nillable="true" type="xsd:string"/>
+              <element name="MergeIntoAltContactID" nillable="true" type="xsd:string"/>
+              <element name="MergeIntoContactID" nillable="true" type="xsd:string"/>
+              <element name="MergeIntoCustomerNumber" nillable="true" type="xsd:string"/>
+              <element name="WebsiteID" nillable="true" type="xsd:string"/>
+            </sequence>
+          </extension>
+        </complexContent>
+      </complexType>
+      <complexType name="Response">
+        <complexContent>
+          <extension base="tns3:Response">
+            <sequence>
+              <element name="ContactID" nillable="true" type="xsd:string"/>
+              <element name="MergeIntoContactID" nillable="true" type="xsd:string"/>
+            </sequence>
+          </extension>
+        </complexContent>
+      </complexType>
+    </schema>
+    <schema targetNamespace="http://removeContactTypeFromContact.contact.V300" xmlns="http://www.w3.org/2001/XMLSchema">
+      <import namespace="http://getContact.contact.V300"/>
+      <import namespace="http://mergeContact.contact.V300"/>
+      <import namespace="http://V300"/>
+      <import namespace="http://getContactType.contact.V300"/>
+      <import namespace="http://addUpdateContactType.contact.V300"/>
+      <import namespace="http://rpc.xml.coldfusion"/>
+      <import namespace="http://response.base.V300"/>
+      <import namespace="http://addContactTypeToContact.contact.V300"/>
+      <import namespace="http://searchShippingAddresses.contact.V300"/>
+      <import namespace="http://searchContacts.contact.V300"/>
+      <import namespace="http://searchContactTypes.contact.V300"/>
+      <import namespace="http://request.base.V300"/>
+      <import namespace="http://_contact.contact.V300"/>
+      <import namespace="http://getContactStatus.contact.V300"/>
+      <import namespace="http://searchMergedContacts.contact.V300"/>
+      <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+      <complexType name="Request">
+        <complexContent>
+          <extension base="tns2:Request">
+            <sequence>
+              <element name="ContactID" nillable="true" type="xsd:string"/>
+              <element name="ContactTypeID" nillable="true" type="xsd:string"/>
+            </sequence>
+          </extension>
+        </complexContent>
+      </complexType>
+      <complexType name="Response">
+        <complexContent>
+          <extension base="tns3:Response">
+            <sequence/>
+          </extension>
+        </complexContent>
+      </complexType>
+    </schema>
+    <schema targetNamespace="http://addContactTypeToContact.contact.V300" xmlns="http://www.w3.org/2001/XMLSchema">
+      <import namespace="http://getContact.contact.V300"/>
+      <import namespace="http://mergeContact.contact.V300"/>
+      <import namespace="http://V300"/>
+      <import namespace="http://getContactType.contact.V300"/>
+      <import namespace="http://addUpdateContactType.contact.V300"/>
+      <import namespace="http://rpc.xml.coldfusion"/>
+      <import namespace="http://response.base.V300"/>
+      <import namespace="http://searchShippingAddresses.contact.V300"/>
+      <import namespace="http://searchContacts.contact.V300"/>
+      <import namespace="http://removeContactTypeFromContact.contact.V300"/>
+      <import namespace="http://searchContactTypes.contact.V300"/>
+      <import namespace="http://request.base.V300"/>
+      <import namespace="http://_contact.contact.V300"/>
+      <import namespace="http://getContactStatus.contact.V300"/>
+      <import namespace="http://searchMergedContacts.contact.V300"/>
+      <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+      <complexType name="Request">
+        <complexContent>
+          <extension base="tns2:Request">
+            <sequence>
+              <element name="ContactID" nillable="true" type="xsd:string"/>
+              <element name="ContactTypeID" nillable="true" type="xsd:string"/>
+            </sequence>
+          </extension>
+        </complexContent>
+      </complexType>
+      <complexType name="Response">
+        <complexContent>
+          <extension base="tns3:Response">
+            <sequence/>
+          </extension>
+        </complexContent>
+      </complexType>
+    </schema>
+    <schema targetNamespace="http://searchContacts.contact.V300" xmlns="http://www.w3.org/2001/XMLSchema">
+      <import namespace="http://getContact.contact.V300"/>
+      <import namespace="http://mergeContact.contact.V300"/>
+      <import namespace="http://V300"/>
+      <import namespace="http://getContactType.contact.V300"/>
+      <import namespace="http://addUpdateContactType.contact.V300"/>
+      <import namespace="http://rpc.xml.coldfusion"/>
+      <import namespace="http://response.base.V300"/>
+      <import namespace="http://addContactTypeToContact.contact.V300"/>
+      <import namespace="http://searchShippingAddresses.contact.V300"/>
+      <import namespace="http://removeContactTypeFromContact.contact.V300"/>
+      <import namespace="http://searchContactTypes.contact.V300"/>
+      <import namespace="http://request.base.V300"/>
+      <import namespace="http://_contact.contact.V300"/>
+      <import namespace="http://getContactStatus.contact.V300"/>
+      <import namespace="http://searchMergedContacts.contact.V300"/>
+      <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+      <complexType name="Request">
+        <complexContent>
+          <extension base="tns2:Request">
+            <sequence>
+              <element name="AltContactID" nillable="true" type="xsd:string"/>
+              <element name="City" nillable="true" type="xsd:string"/>
+              <element name="Company" nillable="true" type="xsd:string"/>
+              <element name="ContactID" nillable="true" type="xsd:string"/>
+              <element name="ContactType" nillable="true" type="xsd:string"/>
+              <element name="CustomerNumber" nillable="true" type="xsd:double"/>
+              <element name="DateModifiedFrom" nillable="true" type="xsd:dateTime"/>
+              <element name="DateModifiedTo" nillable="true" type="xsd:dateTime"/>
+              <element name="Email" nillable="true" type="xsd:string"/>
+              <element name="EmailStatus" nillable="true" type="xsd:string"/>
+              <element name="FirstName" nillable="true" type="xsd:string"/>
+              <element name="LastName" nillable="true" type="xsd:string"/>
+              <element name="MaxRows" nillable="true" type="xsd:double"/>
+              <element name="Page" nillable="true" type="xsd:double"/>
+              <element name="Phone" nillable="true" type="xsd:string"/>
+              <element name="SortBy" nillable="true" type="xsd:string"/>
+              <element name="StateCode" nillable="true" type="xsd:string"/>
+              <element name="WebsiteIDs" nillable="true" type="xsd:string"/>
+            </sequence>
+          </extension>
+        </complexContent>
+      </complexType>
+      <complexType name="Response">
+        <complexContent>
+          <extension base="tns3:Response">
+            <sequence>
+              <element name="Contacts" nillable="true" type="impl:ArrayOf_tns4_Contact"/>
+            </sequence>
+          </extension>
+        </complexContent>
+      </complexType>
+    </schema>
+    <schema targetNamespace="http://searchShippingAddresses.contact.V300" xmlns="http://www.w3.org/2001/XMLSchema">
+      <import namespace="http://getContact.contact.V300"/>
+      <import namespace="http://mergeContact.contact.V300"/>
+      <import namespace="http://V300"/>
+      <import namespace="http://getContactType.contact.V300"/>
+      <import namespace="http://addUpdateContactType.contact.V300"/>
+      <import namespace="http://rpc.xml.coldfusion"/>
+      <import namespace="http://response.base.V300"/>
+      <import namespace="http://addContactTypeToContact.contact.V300"/>
+      <import namespace="http://searchContacts.contact.V300"/>
+      <import namespace="http://removeContactTypeFromContact.contact.V300"/>
+      <import namespace="http://searchContactTypes.contact.V300"/>
+      <import namespace="http://request.base.V300"/>
+      <import namespace="http://_contact.contact.V300"/>
+      <import namespace="http://getContactStatus.contact.V300"/>
+      <import namespace="http://searchMergedContacts.contact.V300"/>
+      <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+      <complexType name="Request">
+        <complexContent>
+          <extension base="tns2:Request">
+            <sequence>
+              <element name="AltShippingAddressID" nillable="true" type="xsd:string"/>
+              <element name="ContactID" nillable="true" type="xsd:string"/>
+              <element name="DateModifiedFrom" nillable="true" type="xsd:dateTime"/>
+              <element name="DateModifiedTo" nillable="true" type="xsd:dateTime"/>
+              <element name="IsPrimary" nillable="true" type="xsd:string"/>
+              <element name="MaxRows" nillable="true" type="xsd:double"/>
+              <element name="Page" nillable="true" type="xsd:double"/>
+              <element name="ShippingAddressID" nillable="true" type="xsd:string"/>
+              <element name="WebsiteIDs" nillable="true" type="xsd:string"/>
+            </sequence>
+          </extension>
+        </complexContent>
+      </complexType>
+      <complexType name="Response">
+        <complexContent>
+          <extension base="tns3:Response">
+            <sequence>
+              <element name="ShippingAddresses" nillable="true" type="impl:ArrayOf_tns4_ShippingAddress"/>
+            </sequence>
+          </extension>
+        </complexContent>
+      </complexType>
+    </schema>
+    <schema targetNamespace="http://getContactStatus.contact.V300" xmlns="http://www.w3.org/2001/XMLSchema">
+      <import namespace="http://getContact.contact.V300"/>
+      <import namespace="http://mergeContact.contact.V300"/>
+      <import namespace="http://V300"/>
+      <import namespace="http://getContactType.contact.V300"/>
+      <import namespace="http://addUpdateContactType.contact.V300"/>
+      <import namespace="http://rpc.xml.coldfusion"/>
+      <import namespace="http://response.base.V300"/>
+      <import namespace="http://addContactTypeToContact.contact.V300"/>
+      <import namespace="http://searchShippingAddresses.contact.V300"/>
+      <import namespace="http://searchContacts.contact.V300"/>
+      <import namespace="http://removeContactTypeFromContact.contact.V300"/>
+      <import namespace="http://searchContactTypes.contact.V300"/>
+      <import namespace="http://request.base.V300"/>
+      <import namespace="http://_contact.contact.V300"/>
+      <import namespace="http://searchMergedContacts.contact.V300"/>
+      <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+      <complexType name="Request">
+        <complexContent>
+          <extension base="tns2:Request">
+            <sequence>
+              <element name="AltContactID" nillable="true" type="xsd:string"/>
+              <element name="ContactID" nillable="true" type="xsd:string"/>
+              <element name="CustomerNumber" nillable="true" type="xsd:string"/>
+              <element name="WebsiteID" nillable="true" type="xsd:string"/>
+            </sequence>
+          </extension>
+        </complexContent>
+      </complexType>
+      <complexType name="Response">
+        <complexContent>
+          <extension base="tns3:Response">
+            <sequence>
+              <element name="IsClubMember" nillable="true" type="xsd:boolean"/>
+              <element name="IsPurchaser" nillable="true" type="xsd:boolean"/>
+              <element name="IsSubscriber" nillable="true" type="xsd:boolean"/>
+            </sequence>
+          </extension>
+        </complexContent>
+      </complexType>
+    </schema>
+    <schema targetNamespace="http://getContactType.contact.V300" xmlns="http://www.w3.org/2001/XMLSchema">
+      <import namespace="http://getContact.contact.V300"/>
+      <import namespace="http://mergeContact.contact.V300"/>
+      <import namespace="http://V300"/>
+      <import namespace="http://addUpdateContactType.contact.V300"/>
+      <import namespace="http://rpc.xml.coldfusion"/>
+      <import namespace="http://response.base.V300"/>
+      <import namespace="http://addContactTypeToContact.contact.V300"/>
+      <import namespace="http://searchShippingAddresses.contact.V300"/>
+      <import namespace="http://searchContacts.contact.V300"/>
+      <import namespace="http://removeContactTypeFromContact.contact.V300"/>
+      <import namespace="http://searchContactTypes.contact.V300"/>
+      <import namespace="http://request.base.V300"/>
+      <import namespace="http://_contact.contact.V300"/>
+      <import namespace="http://getContactStatus.contact.V300"/>
+      <import namespace="http://searchMergedContacts.contact.V300"/>
+      <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+      <complexType name="Request">
+        <complexContent>
+          <extension base="tns2:Request">
+            <sequence>
+              <element name="ContactTypeID" nillable="true" type="xsd:string"/>
+            </sequence>
+          </extension>
+        </complexContent>
+      </complexType>
+      <complexType name="Response">
+        <complexContent>
+          <extension base="tns3:Response">
+            <sequence>
+              <element name="ContactType" nillable="true" type="tns4:ContactType"/>
+            </sequence>
+          </extension>
+        </complexContent>
+      </complexType>
+    </schema>
+    <schema targetNamespace="http://addUpdateContactType.contact.V300" xmlns="http://www.w3.org/2001/XMLSchema">
+      <import namespace="http://getContact.contact.V300"/>
+      <import namespace="http://mergeContact.contact.V300"/>
+      <import namespace="http://V300"/>
+      <import namespace="http://getContactType.contact.V300"/>
+      <import namespace="http://rpc.xml.coldfusion"/>
+      <import namespace="http://response.base.V300"/>
+      <import namespace="http://addContactTypeToContact.contact.V300"/>
+      <import namespace="http://searchShippingAddresses.contact.V300"/>
+      <import namespace="http://searchContacts.contact.V300"/>
+      <import namespace="http://removeContactTypeFromContact.contact.V300"/>
+      <import namespace="http://searchContactTypes.contact.V300"/>
+      <import namespace="http://request.base.V300"/>
+      <import namespace="http://_contact.contact.V300"/>
+      <import namespace="http://getContactStatus.contact.V300"/>
+      <import namespace="http://searchMergedContacts.contact.V300"/>
+      <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+      <complexType name="Request">
+        <complexContent>
+          <extension base="tns2:Request">
+            <sequence>
+              <element name="ContactType" nillable="true" type="tns4:ContactType"/>
+              <element name="Mode" nillable="true" type="xsd:string"/>
+            </sequence>
+          </extension>
+        </complexContent>
+      </complexType>
+      <complexType name="Response">
+        <complexContent>
+          <extension base="tns3:Response">
+            <sequence>
+              <element name="ContactTypeID" nillable="true" type="xsd:string"/>
+            </sequence>
+          </extension>
+        </complexContent>
+      </complexType>
+    </schema>
+    <schema targetNamespace="http://searchMergedContacts.contact.V300" xmlns="http://www.w3.org/2001/XMLSchema">
+      <import namespace="http://getContact.contact.V300"/>
+      <import namespace="http://mergeContact.contact.V300"/>
+      <import namespace="http://V300"/>
+      <import namespace="http://getContactType.contact.V300"/>
+      <import namespace="http://addUpdateContactType.contact.V300"/>
+      <import namespace="http://rpc.xml.coldfusion"/>
+      <import namespace="http://response.base.V300"/>
+      <import namespace="http://addContactTypeToContact.contact.V300"/>
+      <import namespace="http://searchShippingAddresses.contact.V300"/>
+      <import namespace="http://searchContacts.contact.V300"/>
+      <import namespace="http://removeContactTypeFromContact.contact.V300"/>
+      <import namespace="http://searchContactTypes.contact.V300"/>
+      <import namespace="http://request.base.V300"/>
+      <import namespace="http://_contact.contact.V300"/>
+      <import namespace="http://getContactStatus.contact.V300"/>
+      <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+      <complexType name="Request">
+        <complexContent>
+          <extension base="tns2:Request">
+            <sequence>
+              <element name="ContactID" nillable="true" type="xsd:string"/>
+              <element name="DateMergedFrom" nillable="true" type="xsd:dateTime"/>
+              <element name="DateMergedTo" nillable="true" type="xsd:dateTime"/>
+              <element name="MaxRows" nillable="true" type="xsd:double"/>
+              <element name="Page" nillable="true" type="xsd:double"/>
+              <element name="WebsiteIDs" nillable="true" type="xsd:string"/>
+            </sequence>
+          </extension>
+        </complexContent>
+      </complexType>
+      <complexType name="Response">
+        <complexContent>
+          <extension base="tns3:Response">
+            <sequence>
+              <element name="MergedContacts" nillable="true" type="impl:ArrayOf_tns4_MergedContact"/>
+            </sequence>
+          </extension>
+        </complexContent>
+      </complexType>
+    </schema>
+    <schema targetNamespace="http://getContact.contact.V300" xmlns="http://www.w3.org/2001/XMLSchema">
+      <import namespace="http://mergeContact.contact.V300"/>
+      <import namespace="http://V300"/>
+      <import namespace="http://getContactType.contact.V300"/>
+      <import namespace="http://addUpdateContactType.contact.V300"/>
+      <import namespace="http://rpc.xml.coldfusion"/>
+      <import namespace="http://response.base.V300"/>
+      <import namespace="http://addContactTypeToContact.contact.V300"/>
+      <import namespace="http://searchShippingAddresses.contact.V300"/>
+      <import namespace="http://searchContacts.contact.V300"/>
+      <import namespace="http://removeContactTypeFromContact.contact.V300"/>
+      <import namespace="http://searchContactTypes.contact.V300"/>
+      <import namespace="http://request.base.V300"/>
+      <import namespace="http://_contact.contact.V300"/>
+      <import namespace="http://getContactStatus.contact.V300"/>
+      <import namespace="http://searchMergedContacts.contact.V300"/>
+      <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+      <complexType name="Request">
+        <complexContent>
+          <extension base="tns2:Request">
+            <sequence>
+              <element name="AltContactID" nillable="true" type="xsd:string"/>
+              <element name="ContactID" nillable="true" type="xsd:string"/>
+              <element name="CustomerNumber" nillable="true" type="xsd:string"/>
+              <element name="WebsiteID" nillable="true" type="xsd:string"/>
+            </sequence>
+          </extension>
+        </complexContent>
+      </complexType>
+      <complexType name="Response">
+        <complexContent>
+          <extension base="tns3:Response">
+            <sequence>
+              <element name="Contact" nillable="true" type="tns4:Contact"/>
+            </sequence>
+          </extension>
+        </complexContent>
+      </complexType>
+    </schema>
+  </wsdl:types>
+  <wsdl:message name="SearchShippingAddressesResponse">
+    <wsdl:part name="SearchShippingAddressesReturn" type="tns10:Response"/>
+  </wsdl:message>
+  <wsdl:message name="SearchContactTypesRequest">
+    <wsdl:part name="Request" type="tns1:Request"/>
+  </wsdl:message>
+  <wsdl:message name="GetContactStatusResponse">
+    <wsdl:part name="GetContactStatusReturn" type="tns11:Response"/>
+  </wsdl:message>
+  <wsdl:message name="MergeContactRequest">
+    <wsdl:part name="Request" type="tns6:Request"/>
+  </wsdl:message>
+  <wsdl:message name="GetContactRequest">
+    <wsdl:part name="Request" type="tns15:Request"/>
+  </wsdl:message>
+  <wsdl:message name="AddContactTypeToContactResponse">
+    <wsdl:part name="AddContactTypeToContactReturn" type="tns8:Response"/>
+  </wsdl:message>
+  <wsdl:message name="SearchContactsRequest">
+    <wsdl:part name="Request" type="tns9:Request"/>
+  </wsdl:message>
+  <wsdl:message name="AddUpdateContactTypeRequest">
+    <wsdl:part name="Request" type="tns13:Request"/>
+  </wsdl:message>
+  <wsdl:message name="MergeContactResponse">
+    <wsdl:part name="MergeContactReturn" type="tns6:Response"/>
+  </wsdl:message>
+  <wsdl:message name="SearchContactTypesResponse">
+    <wsdl:part name="SearchContactTypesReturn" type="tns1:Response"/>
+  </wsdl:message>
+  <wsdl:message name="GetContactStatusRequest">
+    <wsdl:part name="Request" type="tns11:Request"/>
+  </wsdl:message>
+  <wsdl:message name="RemoveContactTypeFromContactRequest">
+    <wsdl:part name="Request" type="tns7:Request"/>
+  </wsdl:message>
+  <wsdl:message name="GetContactTypeRequest">
+    <wsdl:part name="Request" type="tns12:Request"/>
+  </wsdl:message>
+  <wsdl:message name="GetContactResponse">
+    <wsdl:part name="GetContactReturn" type="tns15:Response"/>
+  </wsdl:message>
+  <wsdl:message name="AddContactTypeToContactRequest">
+    <wsdl:part name="Request" type="tns8:Request"/>
+  </wsdl:message>
+  <wsdl:message name="CFCInvocationException">
+    <wsdl:part name="fault" type="tns5:CFCInvocationException"/>
+  </wsdl:message>
+  <wsdl:message name="SearchMergedContactsResponse">
+    <wsdl:part name="SearchMergedContactsReturn" type="tns14:Response"/>
+  </wsdl:message>
+  <wsdl:message name="SearchShippingAddressesRequest">
+    <wsdl:part name="Request" type="tns10:Request"/>
+  </wsdl:message>
+  <wsdl:message name="SearchMergedContactsRequest">
+    <wsdl:part name="Request" type="tns14:Request"/>
+  </wsdl:message>
+  <wsdl:message name="SearchContactsResponse">
+    <wsdl:part name="SearchContactsReturn" type="tns9:Response"/>
+  </wsdl:message>
+  <wsdl:message name="GetContactTypeResponse">
+    <wsdl:part name="GetContactTypeReturn" type="tns12:Response"/>
+  </wsdl:message>
+  <wsdl:message name="AddUpdateContactTypeResponse">
+    <wsdl:part name="AddUpdateContactTypeReturn" type="tns13:Response"/>
+  </wsdl:message>
+  <wsdl:message name="RemoveContactTypeFromContactResponse">
+    <wsdl:part name="RemoveContactTypeFromContactReturn" type="tns7:Response"/>
+  </wsdl:message>
+  <wsdl:portType name="ContactService">
+    <wsdl:operation name="SearchContactTypes" parameterOrder="Request">
+      <wsdl:input message="impl:SearchContactTypesRequest" name="SearchContactTypesRequest"/>
+      <wsdl:output message="impl:SearchContactTypesResponse" name="SearchContactTypesResponse"/>
+      <wsdl:fault message="impl:CFCInvocationException" name="CFCInvocationException"/>
+    </wsdl:operation>
+    <wsdl:operation name="MergeContact" parameterOrder="Request">
+      <wsdl:input message="impl:MergeContactRequest" name="MergeContactRequest"/>
+      <wsdl:output message="impl:MergeContactResponse" name="MergeContactResponse"/>
+      <wsdl:fault message="impl:CFCInvocationException" name="CFCInvocationException"/>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveContactTypeFromContact" parameterOrder="Request">
+      <wsdl:input message="impl:RemoveContactTypeFromContactRequest" name="RemoveContactTypeFromContactRequest"/>
+      <wsdl:output message="impl:RemoveContactTypeFromContactResponse" name="RemoveContactTypeFromContactResponse"/>
+      <wsdl:fault message="impl:CFCInvocationException" name="CFCInvocationException"/>
+    </wsdl:operation>
+    <wsdl:operation name="AddContactTypeToContact" parameterOrder="Request">
+      <wsdl:input message="impl:AddContactTypeToContactRequest" name="AddContactTypeToContactRequest"/>
+      <wsdl:output message="impl:AddContactTypeToContactResponse" name="AddContactTypeToContactResponse"/>
+      <wsdl:fault message="impl:CFCInvocationException" name="CFCInvocationException"/>
+    </wsdl:operation>
+    <wsdl:operation name="SearchContacts" parameterOrder="Request">
+      <wsdl:input message="impl:SearchContactsRequest" name="SearchContactsRequest"/>
+      <wsdl:output message="impl:SearchContactsResponse" name="SearchContactsResponse"/>
+      <wsdl:fault message="impl:CFCInvocationException" name="CFCInvocationException"/>
+    </wsdl:operation>
+    <wsdl:operation name="SearchShippingAddresses" parameterOrder="Request">
+      <wsdl:input message="impl:SearchShippingAddressesRequest" name="SearchShippingAddressesRequest"/>
+      <wsdl:output message="impl:SearchShippingAddressesResponse" name="SearchShippingAddressesResponse"/>
+      <wsdl:fault message="impl:CFCInvocationException" name="CFCInvocationException"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactStatus" parameterOrder="Request">
+      <wsdl:input message="impl:GetContactStatusRequest" name="GetContactStatusRequest"/>
+      <wsdl:output message="impl:GetContactStatusResponse" name="GetContactStatusResponse"/>
+      <wsdl:fault message="impl:CFCInvocationException" name="CFCInvocationException"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactType" parameterOrder="Request">
+      <wsdl:input message="impl:GetContactTypeRequest" name="GetContactTypeRequest"/>
+      <wsdl:output message="impl:GetContactTypeResponse" name="GetContactTypeResponse"/>
+      <wsdl:fault message="impl:CFCInvocationException" name="CFCInvocationException"/>
+    </wsdl:operation>
+    <wsdl:operation name="AddUpdateContactType" parameterOrder="Request">
+      <wsdl:input message="impl:AddUpdateContactTypeRequest" name="AddUpdateContactTypeRequest"/>
+      <wsdl:output message="impl:AddUpdateContactTypeResponse" name="AddUpdateContactTypeResponse"/>
+      <wsdl:fault message="impl:CFCInvocationException" name="CFCInvocationException"/>
+    </wsdl:operation>
+    <wsdl:operation name="SearchMergedContacts" parameterOrder="Request">
+      <wsdl:input message="impl:SearchMergedContactsRequest" name="SearchMergedContactsRequest"/>
+      <wsdl:output message="impl:SearchMergedContactsResponse" name="SearchMergedContactsResponse"/>
+      <wsdl:fault message="impl:CFCInvocationException" name="CFCInvocationException"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetContact" parameterOrder="Request">
+      <wsdl:input message="impl:GetContactRequest" name="GetContactRequest"/>
+      <wsdl:output message="impl:GetContactResponse" name="GetContactResponse"/>
+      <wsdl:fault message="impl:CFCInvocationException" name="CFCInvocationException"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ContactService.cfcSoapBinding" type="impl:ContactService">
+    <wsdlsoap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="SearchContactTypes">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="SearchContactTypesRequest">
+        <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://V300" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="SearchContactTypesResponse">
+        <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://V300" use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="CFCInvocationException">
+        <wsdlsoap:fault encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" name="CFCInvocationException" namespace="http://V300" use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="MergeContact">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="MergeContactRequest">
+        <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://V300" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="MergeContactResponse">
+        <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://V300" use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="CFCInvocationException">
+        <wsdlsoap:fault encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" name="CFCInvocationException" namespace="http://V300" use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveContactTypeFromContact">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="RemoveContactTypeFromContactRequest">
+        <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://V300" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="RemoveContactTypeFromContactResponse">
+        <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://V300" use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="CFCInvocationException">
+        <wsdlsoap:fault encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" name="CFCInvocationException" namespace="http://V300" use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddContactTypeToContact">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="AddContactTypeToContactRequest">
+        <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://V300" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="AddContactTypeToContactResponse">
+        <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://V300" use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="CFCInvocationException">
+        <wsdlsoap:fault encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" name="CFCInvocationException" namespace="http://V300" use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SearchContacts">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="SearchContactsRequest">
+        <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://V300" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="SearchContactsResponse">
+        <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://V300" use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="CFCInvocationException">
+        <wsdlsoap:fault encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" name="CFCInvocationException" namespace="http://V300" use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SearchShippingAddresses">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="SearchShippingAddressesRequest">
+        <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://V300" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="SearchShippingAddressesResponse">
+        <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://V300" use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="CFCInvocationException">
+        <wsdlsoap:fault encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" name="CFCInvocationException" namespace="http://V300" use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactStatus">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="GetContactStatusRequest">
+        <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://V300" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="GetContactStatusResponse">
+        <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://V300" use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="CFCInvocationException">
+        <wsdlsoap:fault encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" name="CFCInvocationException" namespace="http://V300" use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactType">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="GetContactTypeRequest">
+        <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://V300" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="GetContactTypeResponse">
+        <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://V300" use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="CFCInvocationException">
+        <wsdlsoap:fault encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" name="CFCInvocationException" namespace="http://V300" use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddUpdateContactType">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="AddUpdateContactTypeRequest">
+        <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://V300" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="AddUpdateContactTypeResponse">
+        <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://V300" use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="CFCInvocationException">
+        <wsdlsoap:fault encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" name="CFCInvocationException" namespace="http://V300" use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SearchMergedContacts">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="SearchMergedContactsRequest">
+        <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://V300" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="SearchMergedContactsResponse">
+        <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://V300" use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="CFCInvocationException">
+        <wsdlsoap:fault encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" name="CFCInvocationException" namespace="http://V300" use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetContact">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="GetContactRequest">
+        <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://V300" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="GetContactResponse">
+        <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://V300" use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="CFCInvocationException">
+        <wsdlsoap:fault encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" name="CFCInvocationException" namespace="http://V300" use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ContactServiceService">
+    <wsdl:port binding="impl:ContactService.cfcSoapBinding" name="ContactService.cfc">
+      <wsdlsoap:address location="http://webservices.vin65.com/V300/ContactService.cfc"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://webservices.vin65.com/V300/ContactService.cfc</con:endpoint></con:endpoints><con:operation id="79d75b08-7771-4365-908c-debc57794989" isOneWay="false" action="" name="AddContactTypeToContact" bindingOperationName="AddContactTypeToContact" type="Request-Response" outputName="AddContactTypeToContactResponse" inputName="AddContactTypeToContactRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="80fdf01d-d61d-4b38-abbf-9bbac8d30bfe" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://webservices.vin65.com/V300/ContactService.cfc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v300="http://V300">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v300:AddContactTypeToContact soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">\r
+         <Request xsi:type="add:Request" xmlns:add="http://addContactTypeToContact.contact.V300">\r
+            <Security xsi:type="req:Security" xmlns:req="http://request.base.V300">\r
+               <Password xsi:type="xsd:string">?</Password>\r
+               <Username xsi:type="xsd:string">?</Username>\r
+            </Security>\r
+            <ContactID xsi:type="xsd:string">?</ContactID>\r
+            <ContactTypeID xsi:type="xsd:string">?</ContactTypeID>\r
+         </Request>\r
+      </v300:AddContactTypeToContact>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://V300/ContactService/AddContactTypeToContactRequest"/></con:call></con:operation><con:operation id="54d8e53e-7845-433b-9336-1ae74610cec4" isOneWay="false" action="" name="AddUpdateContactType" bindingOperationName="AddUpdateContactType" type="Request-Response" outputName="AddUpdateContactTypeResponse" inputName="AddUpdateContactTypeRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="141df5b0-fc81-4e45-9797-89106f787684" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://webservices.vin65.com/V300/ContactService.cfc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v300="http://V300">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v300:AddUpdateContactType soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">\r
+         <Request xsi:type="add:Request" xmlns:add="http://addUpdateContactType.contact.V300">\r
+            <Security xsi:type="req:Security" xmlns:req="http://request.base.V300">\r
+               <Password xsi:type="xsd:string">?</Password>\r
+               <Username xsi:type="xsd:string">?</Username>\r
+            </Security>\r
+            <ContactType xsi:type="_con:ContactType" xmlns:_con="http://_contact.contact.V300">\r
+               <ContactType xsi:type="xsd:string">?</ContactType>\r
+               <ContactTypeID xsi:type="xsd:string">?</ContactTypeID>\r
+               <DateAdded xsi:type="xsd:dateTime">?</DateAdded>\r
+               <DateModified xsi:type="xsd:dateTime">?</DateModified>\r
+               <IsPublic xsi:type="xsd:string">?</IsPublic>\r
+               <WebsiteID xsi:type="xsd:string">?</WebsiteID>\r
+            </ContactType>\r
+            <Mode xsi:type="xsd:string">?</Mode>\r
+         </Request>\r
+      </v300:AddUpdateContactType>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://V300/ContactService/AddUpdateContactTypeRequest"/></con:call></con:operation><con:operation id="02a35ec1-42d5-4572-9847-b7ceb7159f94" isOneWay="false" action="" name="GetContact" bindingOperationName="GetContact" type="Request-Response" outputName="GetContactResponse" inputName="GetContactRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="4a64b175-df74-48e6-bf6e-8f796532ed80" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://webservices.vin65.com/V300/ContactService.cfc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v300="http://V300">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v300:GetContact soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">\r
+         <Request xsi:type="get:Request" xmlns:get="http://getContact.contact.V300">\r
+            <Security xsi:type="req:Security" xmlns:req="http://request.base.V300">\r
+               <Password xsi:type="xsd:string">willowpark</Password>\r
+               <Username xsi:type="xsd:string">DeanJonesLIVE</Username>\r
+            </Security>\r
+            <CustomerNumber xsi:type="xsd:string">1126</CustomerNumber>\r
+         </Request>\r
+      </v300:GetContact>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://V300/ContactService/GetContactRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="756ef9e5-b43c-4762-854e-471dbf278757" isOneWay="false" action="" name="GetContactStatus" bindingOperationName="GetContactStatus" type="Request-Response" outputName="GetContactStatusResponse" inputName="GetContactStatusRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f1c5c276-afdf-4399-97d2-c57345797154" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://webservices.vin65.com/V300/ContactService.cfc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v300="http://V300">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v300:GetContactStatus soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">\r
+         <Request xsi:type="get:Request" xmlns:get="http://getContactStatus.contact.V300">\r
+            <Security xsi:type="req:Security" xmlns:req="http://request.base.V300">\r
+               <Password xsi:type="xsd:string">?</Password>\r
+               <Username xsi:type="xsd:string">?</Username>\r
+            </Security>\r
+            <AltContactID xsi:type="xsd:string">?</AltContactID>\r
+            <ContactID xsi:type="xsd:string">?</ContactID>\r
+            <CustomerNumber xsi:type="xsd:string">?</CustomerNumber>\r
+            <WebsiteID xsi:type="xsd:string">?</WebsiteID>\r
+         </Request>\r
+      </v300:GetContactStatus>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://V300/ContactService/GetContactStatusRequest"/></con:call></con:operation><con:operation id="9961a3c1-9adb-46a3-808e-55afbf3765ca" isOneWay="false" action="" name="GetContactType" bindingOperationName="GetContactType" type="Request-Response" outputName="GetContactTypeResponse" inputName="GetContactTypeRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d07e35d7-2ced-42a4-88e4-d34998810a06" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://webservices.vin65.com/V300/ContactService.cfc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v300="http://V300">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v300:GetContactType soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">\r
+         <Request xsi:type="get:Request" xmlns:get="http://getContactType.contact.V300">\r
+            <Security xsi:type="req:Security" xmlns:req="http://request.base.V300">\r
+               <Password xsi:type="xsd:string">?</Password>\r
+               <Username xsi:type="xsd:string">?</Username>\r
+            </Security>\r
+            <ContactTypeID xsi:type="xsd:string">?</ContactTypeID>\r
+         </Request>\r
+      </v300:GetContactType>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://V300/ContactService/GetContactTypeRequest"/></con:call></con:operation><con:operation id="a5130b82-1f64-4213-a247-620f36c2562e" isOneWay="false" action="" name="MergeContact" bindingOperationName="MergeContact" type="Request-Response" outputName="MergeContactResponse" inputName="MergeContactRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="cbb943c5-9c07-403e-a463-fb5d5dd2ac5a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://webservices.vin65.com/V300/ContactService.cfc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v300="http://V300">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v300:MergeContact soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">\r
+         <Request xsi:type="mer:Request" xmlns:mer="http://mergeContact.contact.V300">\r
+            <Security xsi:type="req:Security" xmlns:req="http://request.base.V300">\r
+               <Password xsi:type="xsd:string">?</Password>\r
+               <Username xsi:type="xsd:string">?</Username>\r
+            </Security>\r
+            <AltContactID xsi:type="xsd:string">?</AltContactID>\r
+            <ContactID xsi:type="xsd:string">?</ContactID>\r
+            <CustomerNumber xsi:type="xsd:string">?</CustomerNumber>\r
+            <MergeIntoAltContactID xsi:type="xsd:string">?</MergeIntoAltContactID>\r
+            <MergeIntoContactID xsi:type="xsd:string">?</MergeIntoContactID>\r
+            <MergeIntoCustomerNumber xsi:type="xsd:string">?</MergeIntoCustomerNumber>\r
+            <WebsiteID xsi:type="xsd:string">?</WebsiteID>\r
+         </Request>\r
+      </v300:MergeContact>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://V300/ContactService/MergeContactRequest"/></con:call></con:operation><con:operation id="e6f3aead-e368-4123-b2db-f77c48f54005" isOneWay="false" action="" name="RemoveContactTypeFromContact" bindingOperationName="RemoveContactTypeFromContact" type="Request-Response" outputName="RemoveContactTypeFromContactResponse" inputName="RemoveContactTypeFromContactRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="9cff6ef2-af57-4494-bf1d-b2fea319ad46" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://webservices.vin65.com/V300/ContactService.cfc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v300="http://V300">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v300:RemoveContactTypeFromContact soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">\r
+         <Request xsi:type="rem:Request" xmlns:rem="http://removeContactTypeFromContact.contact.V300">\r
+            <Security xsi:type="req:Security" xmlns:req="http://request.base.V300">\r
+               <Password xsi:type="xsd:string">?</Password>\r
+               <Username xsi:type="xsd:string">?</Username>\r
+            </Security>\r
+            <ContactID xsi:type="xsd:string">?</ContactID>\r
+            <ContactTypeID xsi:type="xsd:string">?</ContactTypeID>\r
+         </Request>\r
+      </v300:RemoveContactTypeFromContact>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://V300/ContactService/RemoveContactTypeFromContactRequest"/></con:call></con:operation><con:operation id="446d7ea4-1e67-4368-863f-f4b2ab84be4d" isOneWay="false" action="" name="SearchContacts" bindingOperationName="SearchContacts" type="Request-Response" outputName="SearchContactsResponse" inputName="SearchContactsRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="1eb2ba8e-0f12-482d-bb9d-e55bc9df3b83" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://webservices.vin65.com/V300/ContactService.cfc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v300="http://V300">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v300:SearchContacts soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+         <Request xsi:type="sear:Request" xmlns:sear="http://searchContacts.contact.V300">
+            <Security xsi:type="req:Security" xmlns:req="http://request.base.V300">
+               <Password xsi:type="xsd:string">willowpark</Password>
+               <Username xsi:type="xsd:string">DeanJonesLIVE</Username>
+            </Security>
+            <FirstName xsi:type="xsd:string">Aa</FirstName>
+            <LastName xsi:type="xsd:string">Mu</LastName>
+         </Request>
+      </v300:SearchContacts>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://V300/ContactService/SearchContactsRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="c1a33aac-8f88-4538-ae84-1222276fca5c" isOneWay="false" action="" name="SearchContactTypes" bindingOperationName="SearchContactTypes" type="Request-Response" outputName="SearchContactTypesResponse" inputName="SearchContactTypesRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="09afd8c1-250e-4ad3-8c25-c0f009bf0a29" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://webservices.vin65.com/V300/ContactService.cfc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v300="http://V300">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v300:SearchContactTypes soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">\r
+         <Request xsi:type="sear:Request" xmlns:sear="http://searchContactTypes.contact.V300">\r
+            <Security xsi:type="req:Security" xmlns:req="http://request.base.V300">\r
+               <Password xsi:type="xsd:string">?</Password>\r
+               <Username xsi:type="xsd:string">?</Username>\r
+            </Security>\r
+            <ContactType xsi:type="xsd:string">?</ContactType>\r
+            <ContactTypeID xsi:type="xsd:string">?</ContactTypeID>\r
+            <DateModifiedFrom xsi:type="xsd:dateTime">?</DateModifiedFrom>\r
+            <DateModifiedTo xsi:type="xsd:dateTime">?</DateModifiedTo>\r
+            <MaxRows xsi:type="xsd:double">?</MaxRows>\r
+            <Page xsi:type="xsd:double">?</Page>\r
+            <WebsiteIDs xsi:type="xsd:string">?</WebsiteIDs>\r
+         </Request>\r
+      </v300:SearchContactTypes>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://V300/ContactService/SearchContactTypesRequest"/></con:call></con:operation><con:operation id="12adae78-8189-4085-8382-c37b320b4e9a" isOneWay="false" action="" name="SearchMergedContacts" bindingOperationName="SearchMergedContacts" type="Request-Response" outputName="SearchMergedContactsResponse" inputName="SearchMergedContactsRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ef388da7-cb32-47a0-b183-96a4da8ecc37" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://webservices.vin65.com/V300/ContactService.cfc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v300="http://V300">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v300:SearchMergedContacts soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">\r
+         <Request xsi:type="sear:Request" xmlns:sear="http://searchMergedContacts.contact.V300">\r
+            <Security xsi:type="req:Security" xmlns:req="http://request.base.V300">\r
+               <Password xsi:type="xsd:string">?</Password>\r
+               <Username xsi:type="xsd:string">?</Username>\r
+            </Security>\r
+            <ContactID xsi:type="xsd:string">?</ContactID>\r
+            <DateMergedFrom xsi:type="xsd:dateTime">?</DateMergedFrom>\r
+            <DateMergedTo xsi:type="xsd:dateTime">?</DateMergedTo>\r
+            <MaxRows xsi:type="xsd:double">?</MaxRows>\r
+            <Page xsi:type="xsd:double">?</Page>\r
+            <WebsiteIDs xsi:type="xsd:string">?</WebsiteIDs>\r
+         </Request>\r
+      </v300:SearchMergedContacts>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://V300/ContactService/SearchMergedContactsRequest"/></con:call></con:operation><con:operation id="2bee4b34-4a9a-4716-88a9-7a8f38e4cdb8" isOneWay="false" action="" name="SearchShippingAddresses" bindingOperationName="SearchShippingAddresses" type="Request-Response" outputName="SearchShippingAddressesResponse" inputName="SearchShippingAddressesRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b9f745b1-0286-4c61-9df4-1fbac40e54a1" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://webservices.vin65.com/V300/ContactService.cfc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v300="http://V300">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v300:SearchShippingAddresses soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">\r
+         <Request xsi:type="sear:Request" xmlns:sear="http://searchShippingAddresses.contact.V300">\r
+            <Security xsi:type="req:Security" xmlns:req="http://request.base.V300">\r
+               <Password xsi:type="xsd:string">?</Password>\r
+               <Username xsi:type="xsd:string">?</Username>\r
+            </Security>\r
+            <AltShippingAddressID xsi:type="xsd:string">?</AltShippingAddressID>\r
+            <ContactID xsi:type="xsd:string">?</ContactID>\r
+            <DateModifiedFrom xsi:type="xsd:dateTime">?</DateModifiedFrom>\r
+            <DateModifiedTo xsi:type="xsd:dateTime">?</DateModifiedTo>\r
+            <IsPrimary xsi:type="xsd:string">?</IsPrimary>\r
+            <MaxRows xsi:type="xsd:double">?</MaxRows>\r
+            <Page xsi:type="xsd:double">?</Page>\r
+            <ShippingAddressID xsi:type="xsd:string">?</ShippingAddressID>\r
+            <WebsiteIDs xsi:type="xsd:string">?</WebsiteIDs>\r
+         </Request>\r
+      </v300:SearchShippingAddresses>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://V300/ContactService/SearchShippingAddressesRequest"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

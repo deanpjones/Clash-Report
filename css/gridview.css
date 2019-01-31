@@ -1,0 +1,95 @@
+﻿/* GRID STYLES     https://weblogs.asp.net/kevinbrammer/glassy-black-gridview-theme */
+
+.GridViewStyle {
+    font-family: Tahoma, Geneva, sans-serif; /*Consolas, Arial, Sans-Serif;*/
+    font-size: 1em;
+    table-layout: auto;
+    border-collapse: collapse;
+    border: #1d1d1d 3px dotted;
+}
+/*Header and Pager styles*/
+.HeaderStyle, .PagerStyle /*Common Styles*/ {
+    /*background-image: url(Images/HeaderGlassBlack.jpg);*/
+    background-position: center;
+    background-repeat: repeat-x;
+    /*background-color: #1d1d1d;*/
+    background-color: #6B3472;
+    /*background-color: #0FB2BC;*/
+    /*background-color: #D0DB27;*/
+}
+
+    .HeaderStyle th {
+        padding: 0.1em 0.5em 0.1em 0.5em;
+        color: #ffffff;
+    }
+
+    .HeaderStyle a {
+        text-decoration: none;
+        color: #ffffff;
+        display: block;
+        text-align: left;
+        font-weight: normal;
+    }
+
+.PagerStyle {
+    background-color: #8D6A96;
+}
+    .PagerStyle table {
+        text-align: center;
+        margin: 1em auto 0.5em auto;
+        /*margin: auto;*/
+    }
+
+        .PagerStyle table td {
+            border: 0px;
+            /*padding: 6px;*/
+        }
+
+    /*page border*/
+    .PagerStyle td {
+        /*border-top: #1d1d1d 3px solid;*/
+    }
+
+    /*page buttons*/
+    .PagerStyle a {
+        border-radius: 6px;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 2px 10px 2px 10px;
+        border: 1px solid #fff;
+        /*border-top: solid 1px #777777;
+        border-right: solid 1px #333333;
+        border-bottom: solid 1px #333333;
+        border-left: solid 1px #777777;*/
+    }
+    .PagerStyle a:hover {
+        background-color: gray;
+        color: #000000;
+    }
+
+    .PagerStyle span {
+        font-weight: bold;
+        color: #FFFFFF;
+        text-decoration: none;
+        padding: 2px 10px 2px 10px;
+    }
+/*RowStyles*/
+.RowStyle td, .AltRowStyle td, .SelectedRowStyle td, .EditRowStyle td /*Common Styles*/ {
+    padding: 0.1em 0.5em 0.1em 0.5em;
+    border-right: solid 1px #1d1d1d;
+}
+
+.RowStyle td {
+    background-color: #c9c9c9;
+}
+
+.AltRowStyle td {
+    background-color: #f0f0f0;
+}
+
+.SelectedRowStyle td {
+    background-color: #ffff66;
+}
+
+
+/* end GRID STYLES */
